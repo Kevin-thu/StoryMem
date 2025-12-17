@@ -1,0 +1,50 @@
+{
+  "story_name": "A Cat’s Peaceful Day",
+  "story_overview": "A gentle, curious house cat spends a quiet day exploring its home and garden. From stretching in morning light to chasing sunbeams, playing with toys, and watching butterflies before curling up for an evening nap, the story captures a cat’s calm yet playful rhythm, celebrating small, tender moments of daily life.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Morning light filters through the window of a cozy living room. A fluffy orange-and-white cat stretches lazily on the windowsill, yawning and blinking at the sunlight. The atmosphere is calm and homey. Wide shot with soft golden lighting.",
+        "The cat jumps down gracefully from the windowsill and pads across the wooden floor toward its food bowl. It pauses, tail slightly curved, as a hand fills the bowl with food. The scene feels warm and domestic. Medium shot following the cat’s movement with a smooth pan.",
+        "Close-up of the cat eating quietly, its whiskers twitching as sunlight glows on its fur. The faint sound of birds outside adds to the peaceful mood. Gentle close-up with shallow focus on the cat’s face and soft lighting."
+      ],
+      "first_frame_prompt": [
+        "Cat mid-stretch on the windowsill, orange-and-white fur catching warm morning light; relaxed yawn, blinking eyes; background living room kept soft.",
+        "Cat stepping across wooden floor toward its bowl; tail curved, attentive look toward the hand pouring kibble; gentle highlights on whiskers and paws.",
+        "Close on the cat’s face at the bowl; whiskers forward, calm eyes; soft sun glow along muzzle and fur with background muted."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "A bright patch of sunlight moves across the floor, and the cat playfully chases it, hopping lightly and pawing at the spot. Dust motes float in the air as the cat moves. The atmosphere is light and joyful. Medium shot with smooth handheld motion for natural liveliness.",
+        "The cat leaps onto the couch and bats at a dangling string toy with both paws, ears perked and eyes wide with focus. The toy sways gently as the cat swipes at it. The scene is playful and dynamic. Medium close-up with soft camera panning."
+      ],
+      "first_frame_prompt": [
+        "Cat poised over a bright floor patch, paw lifted mid-swipe; playful posture, ears alert; soft morning sparkle around whiskers.",
+        "Cat on the couch with both paws raised toward a dangling string; ears forward, eyes wide and focused; body tension showing readiness."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "The cat walks through an open back door into a small sunlit garden. Its fur shimmers slightly as a light breeze passes. The cat steps softly on the grass, ears turning toward distant sounds. The atmosphere is calm and curious. Wide low-angle shot at cat’s height.",
+        "The cat spots a butterfly fluttering above the flowers. It crouches low, tail flicking slowly, eyes following the movement. The butterfly drifts upward as the cat takes a few careful steps forward. Smooth tracking shot capturing the gentle pursuit.",
+        "Under a leafy tree, the cat sits down and gazes upward, the late afternoon light turning its fur golden. Leaves sway softly above, creating dappled shadows. Wide static shot emphasizing serenity and stillness.",
+        "At dusk, the cat returns indoors and curls up on a folded blanket near the window. The room glows with warm orange light from the sunset outside. Medium shot with gentle downward tilt as the cat settles comfortably.",
+        "Close-up of the cat’s face as its eyes slowly close, breathing steady and calm. The outside light fades into twilight. The scene feels warm and restful. Close-up shot with soft focus and slow fade to black."
+      ],
+      "first_frame_prompt": [
+        "Cat stepping from the doorway onto sunlit grass; ears rotating, whiskers lit; fur softly highlighted by the breeze.",
+        "Cat in a low crouch tracking a butterfly; tail tip flicking, eyes fixed upward; forepaws ready to advance.",
+        "Cat seated beneath leaves, gaze lifted; golden edge light along back and ears; calm, composed posture.",
+        "Cat curling onto a folded blanket by the window; small kneading motion, body settling; warm dusk glow on fur.",
+        "Tight on the cat’s relaxed face; eyelids drifting closed, slow breathing; gentle twilight along whiskers."
+      ],
+      "cut": [true, false, false, true, false]
+    }
+  ]
+}

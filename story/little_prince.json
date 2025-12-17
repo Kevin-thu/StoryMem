@@ -1,0 +1,62 @@
+{
+  "story_name": "The Little Prince",
+  "story_overview": "A gentle and poetic story of a young prince from a distant asteroid who travels across the universe, discovering the beauty and fragility of love, friendship, and life. Through his journey—from tending his rose to meeting the fox on Earth—the Little Prince learns to see with the heart, not just with the eyes.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A small golden-haired boy in a simple green outfit stands on a tiny round planet covered in sand-colored dust, watching a sunrise with three small volcanoes and a single red rose nearby. The mood is serene and magical. Wide shot with slow rotation showing the tiny planet floating in space.",
+        "Close-up of the Little Prince gently watering his rose under the warm sunlight. The rose sways slightly, and he smiles softly, eyes full of affection. Medium close-up, soft lighting emphasizing tenderness between them.",
+        "The Little Prince waves goodbye to his rose before leaving his planet, standing next to a small golden spaceship. The rose looks wistful as petals flutter slightly in the wind. Wide shot with slow zoom-out as the ship lifts off into the stars."
+      ],
+      "first_frame_prompt": [
+        "Little Prince with golden hair in a green outfit standing on his tiny planet; eyes lifted toward the pink-orange sunrise; nearby rose and small volcanoes framing his gentle, serene stance.",
+        "Little Prince leaning toward his red rose, tilting a small watering can; soft smile and affectionate eyes as sunlight warms their faces; petals sway delicately.",
+        "Little Prince in green waving beside a small golden ship; the rose’s petals flutter with a wistful look; starry space around them, tender farewell in his expression."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "The Little Prince lands on a planet where a lonely king sits on a tiny throne. The background shows a small rocky planet with a golden glow. The king gestures grandly while the prince listens politely. Medium shot, calm and slightly humorous tone.",
+        "Next, the prince visits a businessman counting stars on his desk made of glowing cubes. The prince tilts his head curiously, trying to understand. The scene feels cold and mechanical. Smooth transition with no hard cut, medium-wide shot tracking movement.",
+        "The Little Prince shakes his head sadly as he departs the businessman’s planet, his small ship gliding through the starry void. The atmosphere is quiet and contemplative. Wide shot with slow pan following the ship."
+      ],
+      "first_frame_prompt": [
+        "Little Prince standing politely before a lonely king on a miniature throne; the prince’s attentive eyes and calm posture meet the king’s grand gestures; soft golden glow around them.",
+        "Little Prince beside a businessman counting star-cubes; the prince tilts his head in curious puzzlement; cool light reflecting off the glowing desk, mechanical mood on the businessman’s face.",
+        "Little Prince visible in the canopy of a small golden ship, giving a gentle, saddened shake of his head as he departs; quiet stars surrounding him."
+      ],
+      "cut": [true, true, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "The Little Prince arrives on Earth, standing in a vast golden desert with soft wind blowing his hair. He looks around, amazed by the vastness. Wide shot with slow camera pullback showing dunes and distant sunlight.",
+        "A fox appears from behind a sand dune, curious and cautious. The prince kneels and extends his hand gently. Warm afternoon light casts long shadows, mood soft and touching. Medium close-up, slow motion to emphasize the first encounter.",
+        "The fox and the prince sit together under a tree at sunset. The fox speaks gently while the prince listens, both calm and thoughtful. The colors turn warm orange and gold. Medium-wide shot with steady framing, intimate and peaceful."
+      ],
+      "first_frame_prompt": [
+        "Little Prince in green standing in a golden desert, hair lifted by a soft wind; wide, amazed eyes taking in the vast dunes and distant sun haze.",
+        "Little Prince kneeling and extending an open hand toward a cautious fox; warm side light on their faces; tender first contact held in their gaze.",
+        "Little Prince and the fox seated under a lone tree at sunset; the prince listening with calm, thoughtful eyes as the fox speaks; warm orange-gold glow around them."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "The Little Prince stands in the desert at dawn, the wind softly moving his scarf. He looks toward the horizon, remembering the fox and the rose. Wide shot with slow fade-in sunlight and soft pastel tones.",
+        "He turns and begins walking away, leaving small footprints in the sand that slowly fade as he walks. The desert glows pink and gold. Smooth transition without hard cut, steady tracking shot from behind.",
+        "Final shot: the Little Prince’s planet reappears among the stars, his rose blooming again under the starlight. Calm, dreamlike atmosphere. Wide cosmic shot with slow zoom-out, fading gently to black."
+      ],
+      "first_frame_prompt": [
+        "Little Prince in green with a wind-lifted scarf, facing the dawn horizon; soft pastel pink-blue light on his thoughtful face, memories in his eyes.",
+        "Little Prince walking away as fresh footprints begin in the pink-gold sand; steady, gentle posture; breeze smoothing prints behind him.",
+        "Little Prince’s tiny planet glowing among the stars, his red rose blooming under starlight; tranquil, dreamlike calm in the prince’s world."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

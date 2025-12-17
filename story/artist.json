@@ -1,0 +1,34 @@
+{
+  "story_name": "Stroke of Clarity",
+  "story_overview": "In a bright, spacious studio, a focused female artist edges toward finishing a large abstract canvas. Through a sequence of intimate shots—from tools and textures to breath and brush—the moment captures her concentration, decision, and relief as a final, decisive stroke transforms uncertainty into satisfaction.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Medium shot of a female artist in paint-splattered clothes, standing in a sunlit, spacious studio before a nearly finished abstract canvas; she studies the surface with intense, focused eyes, holding a paintbrush loosely at her side. Calm, contemplative mood with soft daylight and scattered art materials around; slow, minimal camera sway.",
+        "Close-up of her wooden palette: a vibrant mix of thick oil colors—deep blues, cadmium reds, ochres—gleaming under natural light. Static camera, shallow depth of field emphasizing pigment texture.",
+        "Close-up of her hand confidently mixing a deep blue hue with the palette knife and brush, paint folding into a rich shade. Gentle handheld micro-movements, soft studio ambience.",
+        "Medium close-up of her face in deep concentration, brow furrowed, a faint paint smudge on her cheek; reflections of color in her eyes. Slow push-in enhances intensity.",
+        "She takes a deliberate, centering breath and steps toward the canvas, posture grounded, resolve forming. Medium shot with slight dolly forward, maintaining continuity from previous frame.",
+        "Close-up of the paintbrush meeting the canvas, laying a decisive, slow stroke; bristles drag through viscous blue. Static macro framing, audible soft brush glide implied.",
+        "Extreme close-up on the paint’s thick texture as it is applied—ridges, sheen, and subtle color variations visible. No camera move; focus pulls gently across the stroke.",
+        "Medium shot as she steps back from the canvas, full body in frame, evaluating the composition with measured gaze and relaxed shoulders. Slow dolly back to reveal studio space and scattered works-in-progress.",
+        "Close-up of her eyes; tension eases and a slow, genuine smile appears as they soften in relief. Minimal camera motion, warm highlights catching in the iris.",
+        "Final wide shot of the artist and her completed abstract masterpiece in the quiet, light-filled studio; dust motes float, the room serene and fulfilled. Locked-off camera, lingering beat to close."
+      ],
+      "first_frame_prompt": [
+        "Artist-centered view: paint-splattered clothes, focused eyes on the canvas, brush resting at her side; warm daylight on her face and hands.",
+        "Palette framed around her grip and gestures; her fingers near vibrant oils—deep blue, cadmium red, ochre—pigments catching natural light.",
+        "Her hand mixing deep blue with knife and brush; knuckle tension and controlled motion emphasized; creamy folds of paint as context.",
+        "Close on her face: furrowed brow, faint cheek smudge, eyes catching reflected color; quiet intensity foregrounded.",
+        "Her torso and hands as she steadies herself and steps toward the canvas; centered breath visible in posture and grip.",
+        "Her hand guiding the brush as it touches the canvas; bristles and viscous blue under her controlled pressure.",
+        "Ultra-tight on her application zone: fingertips and brush ferrule near thick ridges; subtle sheen tracking her movement.",
+        "The artist in frame stepping back, body language relaxing; gaze measuring the work; studio details softened behind her.",
+        "Tight on her eyes and upper cheeks; tension releasing into a small, genuine smile; warm catchlight on the iris.",
+        "Artist and finished canvas with her present in the composition; her relaxed stance and satisfied expression emphasized."
+      ],
+      "cut": [true, false, true, true, true, true, true, true, true, true]
+    }
+  ]
+}

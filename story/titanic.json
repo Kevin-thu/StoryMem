@@ -1,0 +1,56 @@
+{
+  "story_name": "The Titanic: A Journey of Love and Fate",
+  "story_overview": "A gentle retelling of the Titanic story through the eyes of Jack and Rose — two souls from different worlds who meet aboard the grand ship. Their brief, passionate connection unfolds against the beauty of the Titanic’s voyage, before fate intervenes. The story focuses on quiet, emotional moments of wonder, love, and farewell, highlighting humanity amid tragedy.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A wide establishing shot of the majestic Titanic docked at the port under soft morning light, passengers bustling with excitement, steam rising from the chimneys. The camera slowly pans across the ship’s gleaming hull, emphasizing its grandeur and elegance.",
+        "Medium shot of Jack, a young artist in simple clothes, stepping aboard with a ticket in hand and an eager smile. Around him, wealthy passengers in elegant attire board as well. The contrast between classes is subtly shown through costume and posture.",
+        "Close-up of Rose, a young woman with red hair in an ornate hat and fine dress, gazing wistfully toward the sea from the ship’s deck. The wind gently lifts her hair. The tone is calm yet slightly melancholic, with golden sunlight reflecting off the water."
+      ],
+      "first_frame_prompt": [
+        "Titanic at dawn beside a lively pier; soft steam rising, hull gleaming; excited passengers clustered along the gangway; quiet grandeur in the morning glow.",
+        "Jack boarding with a worn ticket and eager smile; simple clothes and open posture contrasting with nearby elegant travelers.",
+        "Rose at the railing in a fine dress and ornate hat; red hair lifted by a breeze as she looks toward the sea; gentle gold light on calm water, tender melancholy."
+      ],
+      "cut": [true, true, true]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Medium shot of Jack, the young artist in simple clothes, and Rose, the young woman in fine dress, meeting by the railing for the first time, her red hair glowing in the sunset. They exchange shy smiles. The soft ocean breeze and gentle golden light create a romantic, tender atmosphere.",
+        "Close-up of their hands lightly touching as they look out at the horizon together. The lighting softens, with warm tones evoking a sense of connection and destiny. The camera slowly zooms in to their faces as they smile."
+      ],
+      "first_frame_prompt": [
+        "By the rail at sunset, Jack in simple attire and Rose in fine dress share shy smiles; her red hair rim-lit, sea breathing softly behind them.",
+        "Their fingertips meeting on the rail; warm light and a blurred horizon holding them in a quiet promise; soft approach toward their smiling faces."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "Medium shot of Jack and Rose at the bow of the ship, arms outstretched in the wind. She laughs freely as Jack holds her waist to steady her. The scene radiates youthful joy and freedom. The camera circles them slowly in a wide arc.",
+        "Close-up of their faces as they turn toward each other and share a quiet, heartfelt moment, illuminated by moonlight. The emotion is pure and calm. The shot fades softly into darkness, bridging to the next scene."
+      ],
+      "first_frame_prompt": [
+        "At the bow, Rose’s arms wide to the wind, Jack steadying her with a sure hold; bright sea ahead, unguarded laughter and freedom on their faces.",
+        "Moonlit closeness as they turn toward each other; serene affection in their eyes, soft blue light edging their profiles; gentle fade gathering at the edges."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "Medium shot of Jack and Rose in life vests among the chaos, holding hands tightly. The camera shakes gently to convey urgency but remains focused on their faces, showing fear and love intertwined.",
+        "Close-up of Rose floating on a piece of wood in the freezing water, tears mixing with snowflakes as she whispers a farewell to Jack. The light is dim blue, still and tragic. The camera slowly pulls back to a quiet wide shot of the endless sea, fading to black."
+      ],
+      "first_frame_prompt": [
+        "On a stormed deck and dark sea, Jack and Rose in life vests grip each other’s hands; fear and love share the same breath on their faces.",
+        "Rose on a small plank in blue-cold water; snowflakes resting on tear-wet lashes as she whispers goodbye; the vast, silent sea waiting to take the frame."
+      ],
+      "cut": [true, false]
+    }
+  ]
+}

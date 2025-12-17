@@ -1,0 +1,58 @@
+{
+  "story_name": "The Monkey King: Journey Begins",
+  "story_overview": "The story follows the legendary Monkey King, born from stone, as he discovers his powers, rebels against heaven, and ultimately learns humility under the guidance of a Buddhist master. The short film captures key moments of his transformation — from playful arrogance to spiritual awakening — through vivid mythical scenes filled with energy, color, and emotion.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A glowing stone egg rests atop a misty mountain under golden sunrise. Slowly, cracks form as light radiates outward. The stone splits open, revealing a small monkey with bright golden fur and curious eyes. Wide shot with gentle zoom-in and soft magical lighting, evoking a sense of birth and wonder.",
+        "The young Monkey King climbs to the mountain peak, standing proudly against the wind. Clouds swirl around him as he gazes over vast lands below, filled with forests and rivers. The atmosphere is majestic and free-spirited. Medium-wide shot with slow upward pan emphasizing his boldness."
+      ],
+      "first_frame_prompt": [
+        "Golden sunrise over a misty peak; a glowing stone egg with fine cracks and warm light spilling out; a small golden-furred monkey’s curious eyes emerging.",
+        "Young Monkey King at the cliff edge, wind in his fur; proud, lifted chin as clouds curl below and distant lands stretch beyond."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "In an ancient jungle filled with glowing waterfalls, the Monkey King trains tirelessly. His expression shows confidence and mischief. Wide dynamic shot with gentle camera follow, energetic yet smooth.",
+        "The Monkey King sits under a tall pine tree, meditating as golden energy swirls faintly around him. His fur shimmers under moonlight, eyes closed in concentration. The forest glows softly with mystic calm. Medium close-up, steady camera, tranquil mood.",
+        "Suddenly, he opens his eyes and grins — then leaps into the air, transforming his staff to giant size, twirling it in the clouds. A display of power and pride fills the sky. Wide shot from below with smooth camera tilt following his ascent."
+      ],
+      "first_frame_prompt": [
+        "Monkey King in a lush jungle stance, playful confidence in his eyes; luminous falls and mist behind, energy coiled in his posture.",
+        "Monkey King seated under a pine, eyes closed; a faint golden aura circling; moonlit fur shimmering with calm focus.",
+        "Monkey King bursting upward, staff growing in his hands; wide grin, swirling clouds above, triumphant energy radiating from him."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "In the grand halls of Heaven, the Monkey King walks arrogantly past celestial guards, golden armor gleaming, staff resting on his shoulder. The gods watch with mixed awe and fear. Medium tracking shot from behind, emphasizing his confidence and defiance.",
+        "As the Jade Emperor raises his hand, heavenly soldiers surround the Monkey King. He smirks and leaps into battle, spinning his staff to deflect attacks with graceful power. The motion is energetic but controlled. Wide shot with gentle tracking to follow his movements.",
+        "After the clash, the Monkey King stands atop broken clouds, victorious but alone. The golden light fades to twilight. A sense of pride mixed with emptiness fills the air. Slow zoom-out, fading into quiet dusk tones."
+      ],
+      "first_frame_prompt": [
+        "Monkey King striding through a celestial hall in gleaming gold armor, staff on his shoulder; a confident, defiant gaze forward.",
+        "Monkey King poised as heavenly soldiers tighten the ring; half-smile forming, staff ready; regal tension on his face.",
+        "Monkey King alone on shattered clouds at twilight; shoulders squared yet eyes distant, pride tempered by solitude."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "In a serene temple, the Monkey King kneels before a calm Buddhist monk, his armor gone, wearing simple robes. The monk places a golden circlet on his head. The atmosphere is solemn yet peaceful. Medium shot with warm, soft lighting.",
+        "The Monkey King looks up at the sunrise beyond the temple gates. His expression softens — a mixture of humility and newfound purpose. Wind gently moves his robe as light shines on his face. Wide still shot with slow fade-out, ending the story on hope and redemption."
+      ],
+      "first_frame_prompt": [
+        "Monkey King in plain robes kneeling before a serene monk; golden circlet lowered toward his brow; softened eyes, warm solemn light.",
+        "Monkey King facing the dawn beyond the gate; robe stirring in a light breeze; gentle rays on a calm, humbled expression."
+      ],
+      "cut": [true, false]
+    }
+  ]
+}

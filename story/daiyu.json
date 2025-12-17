@@ -1,0 +1,62 @@
+{
+  "story_name": "Quiet Petals: Lin Daiyu’s First Spring in the Garden",
+  "story_overview": "A gentle, lyrical portrait of Lin Daiyu arriving at the Jia household, discovering the Grand View Garden, meeting Jia Baoyu, and finding solace in poetry and falling blossoms. Across simple, quiet moments, her grace, sensitivity, and bond with nature unfold in a soft, painterly atmosphere.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Early spring courtyard outside the Jia residence gate. Lin Daiyu, a slender teenage girl in pale green hanfu with a light cloak, steps down from a sedan chair, holding a silk handkerchief. She glances up, eyes clear and slightly wistful, as a maid lifts the bamboo curtain. Soft morning light, faint mist. Wide establishing shot, gentle dolly-in.",
+        "Daiyu pauses by a stone path lined with budding plum branches. She adjusts her cloak and draws a small breath, a calm, poised expression. Two maids follow at a respectful distance carrying a book bundle. Quiet, elegant mood with muted colors. Medium shot, slow left-to-right pan following her walk.",
+        "At the carved wooden threshold, a house steward bows. Daiyu inclines her head with a subtle smile, handkerchief lightly held. Interior lanterns glow warm against the cool outdoor tones. Close-up on her face and hands, shallow depth of field, no cut from previous movement for a seamless entrance."
+      ],
+      "first_frame_prompt": [
+        "Daiyu stepping down from the sedan chair, pale green hanfu and light cloak softly lit; silk handkerchief in hand, eyes clear and slightly wistful; maid lifting curtain kept as gentle context.",
+        "Daiyu along the stone path, adjusting her cloak; composed breath and poised expression foregrounded; two maids and budding plums subdued behind.",
+        "Close on Daiyu at the threshold; subtle smile, handkerchief light in her fingers; warm lantern glow touching her face and hands."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Inside a corridor opening to the Grand View Garden: winding corridor beams, rockery, and a small pond with koi. Daiyu stands at the railing, looking at reflections on ripples, her sleeve brushing the carved wood. The mood is lyrical and quiet. Wide shot with slow tilt down to the water.",
+        "She kneels briefly to straighten a sprig fallen on the stone step, her fingers delicate, expression soft with thought. The maid offers her a simple fan; she accepts with a nod. Medium close-up, steady camera, soft breeze stirring her hair ribbons.",
+        "A gust shakes early peach blossoms; petals drift around her as she lifts her gaze. She lightly opens the fan, eyes bright then pensive. Close-up with petals crossing frame, gentle rack focus from petals to her eyes."
+      ],
+      "first_frame_prompt": [
+        "Daiyu at the railing, sleeve brushing carved wood; her gaze lowered to the ripples, serene profile and gentle posture emphasized.",
+        "Daiyu kneeling to straighten a fallen sprig; delicate fingers and soft, thoughtful expression; maid’s offering hand with fan as secondary detail.",
+        "Close on Daiyu’s face framed by drifting petals; fan beginning to open; eyes bright then turning pensive."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "By a pavilion near a stream, Jia Baoyu approaches—youthful, refined, wearing light blue robe with a jade pendant. He slows and offers a courteous bow; Daiyu returns a measured nod. Light filters through latticework, creating patterned shadows. Two-shot, medium wide, static.",
+        "They sit across a low stone table with tea. Baoyu speaks softly, curious; Daiyu listens, then answers with a faint smile, gaze steady yet reserved. Steam curls from porcelain cups. Medium shot alternating gentle over-the-shoulder angles, smooth match cut implied.",
+        "A quiet shared laugh as a petal lands on Baoyu’s sleeve; he brushes it away, and Daiyu’s eyes follow the falling petal to the stream. The atmosphere is warm and restrained. Medium close-up on their hands and the jade catching light; subtle push-in."
+      ],
+      "first_frame_prompt": [
+        "Daiyu and Baoyu facing each other at the pavilion; Baoyu mid-bow, Daiyu poised; their expressions and posture foregrounded with lattice light on faces.",
+        "Daiyu listening with a faint smile across the tea; steady gaze, reserved warmth; Baoyu softly speaking kept in gentle background.",
+        "Hands and subtle expressions emphasized: petal resting on Baoyu’s sleeve, jade glint; Daiyu’s eyes following the petal with quiet amusement."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "Late afternoon by a bamboo grove bench. Daiyu sits alone, a slim poetry booklet on her lap, petals scattered on the ground. Sunlight turns golden, cicadas faint in the distance. Wide, serene static shot framing her small figure amid tall bamboo.",
+        "She copies a couplet with a brush on small rice paper, pauses, and gently gathers a few fallen petals into her handkerchief. Expression tender yet distant. Medium close-up on brush, ink, and her calm profile; ambient rustle of leaves implied.",
+        "She ties the handkerchief corner, stands, and looks back at the garden with a slight wistful smile. A breeze lifts her sleeve; petals drift past as the light softens. Medium shot, slow fade-out to suggest evening’s approach, ending on quiet grace."
+      ],
+      "first_frame_prompt": [
+        "Daiyu seated at the bamboo bench; slim poetry booklet resting on her lap; gentle, introspective expression in late golden light.",
+        "Daiyu’s calm profile and hands: brush tip over rice paper, ink stone nearby; tender pause as she gathers petals into the handkerchief.",
+        "Daiyu tying the handkerchief corner and turning back; slight wistful smile; sleeve lifted by a breeze, petals drifting past her."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

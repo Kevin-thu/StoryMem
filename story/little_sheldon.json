@@ -1,0 +1,54 @@
+{
+  "story_name": "A Day in the Life of Little Sheldon",
+  "story_overview": "The story follows Little Sheldon, a young genius with a brilliant mind and quirky habits, through a single day in his small Texas town. From an early morning science experiment to solving math problems at school, and from a thoughtful afternoon at home to a heartwarming evening with his family, the story captures his curiosity, intelligence, and innocence. The tone is lighthearted, warm, and humorous, showing the simple joys and challenges of being a young genius.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Morning sunlight filters into a modest Texas bedroom filled with books, model rockets, and science posters. Little Sheldon, a small boy with neatly combed hair and plaid pajamas, wakes up precisely when his alarm rings. He immediately puts on his glasses and sits up straight, looking determined. Warm, cheerful tone with soft natural light. Wide shot, slow pan across the room.",
+        "Sheldon carefully measures cereal and milk with a beaker and measuring cylinder instead of a bowl, noting the quantities in a small notebook. His mother looks amused in the background. Cozy kitchen scene with gentle morning light. Medium shot focused on his meticulous movements, then a soft zoom on his concentrated face."
+      ],
+      "first_frame_prompt": [
+        "Little Sheldon in plaid pajamas sitting up exactly at the alarm, slipping on his glasses; warm morning light on a tidy room with books and model rockets; neat, determined posture.",
+        "Little Sheldon pouring cereal and milk with a beaker and graduated cylinder; small notebook open for notes; his mother smiling in the background; cozy morning glow on his focused face."
+      ],
+      "cut": [true, true]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "At school, Sheldon sits in a classroom full of older kids, wearing a bow tie and plaid shirt. He raises his hand eagerly to answer the teacher’s question while others look puzzled. Bright and tidy classroom with sunlight streaming in. Wide shot capturing his small figure among taller classmates.",
+        "The teacher looks surprised as Sheldon confidently explains the answer on the chalkboard with neat handwriting and enthusiasm. Other kids whisper and glance at him in awe. Medium shot with slow pan following his chalk movements. The tone is proud yet innocent.",
+        "Recess time. Sheldon sits alone under a tree, reading a physics book while other kids play soccer in the background. The mood is peaceful and slightly humorous. Wide shot with gentle breeze and soft sunlight filtering through leaves."
+      ],
+      "first_frame_prompt": [
+        "Little Sheldon in a bow tie raising his hand among taller classmates; bright sunlight on his attentive face; puzzled looks around him.",
+        "Little Sheldon at the chalkboard writing clean equations; teacher’s surprised look and classmates’ whispers; his expression proud yet innocent.",
+        "Little Sheldon sitting under a tree with a physics book; soccer game behind him; dappled light on a calm, content face."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "Afternoon at home. Sheldon builds a small homemade circuit on his desk cluttered with wires, batteries, and a magnifying glass. His twin sister peeks in, looking curious. The lighting is warm and golden. Medium close-up of Sheldon adjusting tiny parts with serious focus.",
+        "The light bulb suddenly flickers on, and Sheldon smiles proudly, clapping his hands once in delight. His sister giggles. The atmosphere is joyful and cozy. Close-up on their faces with soft focus and a gentle camera zoom on the glowing bulb."
+      ],
+      "first_frame_prompt": [
+        "Little Sheldon focused at a warm, golden-lit desk adjusting a tiny circuit; wires and batteries nearby; his twin sister peeking in with curious eyes.",
+        "Small bulb beginning to glow; Little Sheldon’s proud smile and his sister’s giggle in soft background; cozy, joyful warmth on their faces."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "Evening dinner with family. Sheldon sits at the table with his parents and siblings, explaining a scientific concept while gesturing enthusiastically with his fork. The family listens with mixed amusement and confusion. Warm light from above creates a homely atmosphere. Wide shot of the dining table capturing everyone’s reactions."
+      ],
+      "first_frame_prompt": [
+        "Family dinner under warm light: Little Sheldon animatedly explaining with a fork in hand; parents and siblings sharing amused, puzzled smiles; homely, cozy mood on their faces."
+      ],
+      "cut": [true]
+    }
+  ]
+}

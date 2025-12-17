@@ -1,0 +1,48 @@
+{
+  "story_name": "The Vision of Steve Jobs",
+  "story_overview": "A short biographical story capturing key moments in Steve Jobs’s journey — from his early curiosity and innovation in a humble garage, to his triumphant Apple keynote unveiling the iPhone. Through quiet determination, creativity, and vision, the story portrays how passion and simplicity shaped one of the most iconic figures in technology history.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A young Steve Jobs, sits in a dimly lit garage cluttered with tools and electronic parts. He wears a simple turtleneck and jeans, sketching ideas on a notepad under the warm glow of a desk lamp. The atmosphere is intimate and focused. Medium shot with slow dolly in to his concentrated face.",
+        "Jobs carefully connects circuit boards on a wooden table beside Steve Wozniak, who smiles as the prototype sparks to life. The garage hums with quiet excitement and creative energy. Wide shot capturing both inventors’ teamwork with soft handheld motion.",
+        "A close-up of the small computer monitor flickering on for the first time. Jobs’s eyes widen slightly; he leans back with a satisfied grin. The mood feels like a spark of destiny. Close-up shot with shallow focus on his expression and the glowing screen."
+      ],
+      "first_frame_prompt": [
+        "Young Steve Jobs in turtleneck and jeans, focused over a notepad under a warm desk lamp; thoughtful eyes, scattered tools framing his concentration.",
+        "Jobs and Wozniak leaning over circuit boards; Jobs’ careful hands at work, Woz’s pleased smile nearby; a tiny spark lighting their faces.",
+        "Jobs’ face lit by a small CRT flicker; eyes widening, a satisfied grin starting; screen glow reflecting in his glasses."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Years later, Jobs walks through Apple’s minimalist headquarters hallway, now in his black turtleneck and round glasses. Sunlight reflects off the white walls, evoking precision and clarity. Wide tracking shot from behind as he strides with calm confidence.",
+        "He enters a design studio where sleek devices rest on tables. Jobs gently picks up an early iPhone prototype, turning it in his hand as designers look on. The scene feels visionary yet grounded. Medium shot focusing on his thoughtful expression and the device’s reflection of light.",
+        "Close-up of Jobs’s hand brushing across the smooth glass surface. The camera lingers, emphasizing simplicity and innovation. Gentle zoom-in as he smiles subtly, realizing its potential. No major movement, maintaining elegance and calm."
+      ],
+      "first_frame_prompt": [
+        "Steve in black turtleneck and round glasses striding through a bright corridor; composed posture, calm determination on his face.",
+        "In the studio, Steve lifting an early iPhone prototype; attentive gaze, subtle light catching the glass as he studies it.",
+        "Steve’s hand gliding over the smooth glass; a restrained smile edging in, focus on the simplicity in his touch."
+      ],
+      "cut": [true, true, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "On stage at an Apple keynote, Jobs stands before a dark background with a giant screen behind him. He wears his signature black turtleneck, jeans, and sneakers. The audience is dimly lit, anticipation building. Wide shot with slow zoom toward the stage.",
+        "Jobs holds up the first iPhone with a confident yet humble smile. The audience erupts in applause, but the focus remains on him and the glowing device. The atmosphere is electric and inspiring. Medium shot from the audience’s perspective with slight handheld motion.",
+        "Backstage later, Jobs sits quietly alone, looking at the iPhone in his palm. The applause fades to silence. He smiles softly, a mix of pride and peace. Warm, subdued lighting highlights his reflective mood. Close-up shot with slow fade to black, ending the story on calm fulfillment."
+      ],
+      "first_frame_prompt": [
+        "Steve on stage in black turtleneck before a dark backdrop; poised stance, calm anticipation in his eyes.",
+        "Steve holding the first iPhone up; humble, confident smile; device glow drawing attention to his focused expression.",
+        "Backstage, Steve seated with the phone resting in his palm; soft, peaceful smile and warm light on a reflective face."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

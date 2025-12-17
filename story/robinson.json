@@ -1,0 +1,62 @@
+{
+  "story_name": "Robinson Crusoe",
+  "story_overview": "A young sailor, Robinson Crusoe, survives a shipwreck and finds himself alone on a deserted island. Through determination and ingenuity, he learns to survive—building shelter, taming nature, and finding companionship with a rescued man named Friday. The story captures his transformation from fear to resilience, and finally, to peace and hope.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A wide shot of a wooden sailing ship battling heavy waves under a dark, stormy sky. Lightning flashes illuminate the panicked crew as Robinson, a young man in worn sailor clothes, clings to the mast. The atmosphere is chaotic and intense, with rough sea spray hitting the camera lens.",
+        "The ship tilts violently as waves crash over the deck. Robinson loses his grip and is thrown into the ocean. Medium shot showing his struggle in the water amid thunder and roaring winds. The scene feels desperate and overwhelming.",
+        "A calmer morning light. Robinson lies unconscious on a sandy beach, clothes soaked and torn. The ocean behind him glistens under the sunrise. Slow zoom-in as he slowly opens his eyes and realizes he is alone. The mood shifts from chaos to quiet survival."
+      ],
+      "first_frame_prompt": [
+        "Robinson in worn sailor clothes clinging to the mast as lightning reveals panicked crew; rain-swept face, jaw set against towering waves.",
+        "Robinson flung into the churning sea beside the heaving hull; arms thrashing, fear wide in his eyes as thunder booms.",
+        "Robinson washed ashore on wet sand, clothes torn and soaked; eyelids fluttering open to a quiet sunrise and the first breath of solitude."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Wide shot of Robinson exploring the island jungle, carrying a wooden stick and a small bundle of salvaged supplies. The background shows dense green trees, tropical birds, and sunlight filtering through leaves. The mood is cautious but curious.",
+        "Medium shot of Robinson gathering fruits and building a small wooden shelter near a cliffside. He wipes sweat from his forehead, showing determination. The camera slowly pans to reveal his growing camp area.",
+        "Close-up of Robinson lighting a campfire with flint stones as dusk falls. The orange glow lights his face, now calmer and more resolute. The fire crackles softly, symbolizing his first moment of stability. Gentle fade to night sky."
+      ],
+      "first_frame_prompt": [
+        "Robinson stepping carefully through dense green undergrowth with a stick and small bundle; alert, curious eyes tracking the unknown.",
+        "Robinson stacking branches near a cliffside, fruit gathered nearby; sweat wiped from his brow, determined focus on the shelter.",
+        "Robinson striking flint as dusk settles; first flames catching and warming his calmer face; relief and resolve in the firelight."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "A sunny day on the beach. Robinson, now with a short beard and animal-skin clothing, carves wood beside his hut. In the distance, he notices footprints in the sand. The camera follows his tense gaze as he slowly stands up. The atmosphere turns suspenseful.",
+        "Medium shot of Robinson hiding behind bushes. He finds a frightened man bound by ropes. Robinson cautiously approaches and unties him. The man looks grateful and bows. The mood shifts to relief and friendship.",
+        "Wide shot of Robinson and the rescued man, now named Friday, working together—repairing a fence and cooking food by the fire. They share a smile, framed by the golden sunset. The tone is warm and hopeful, with a slow panning shot capturing their companionship."
+      ],
+      "first_frame_prompt": [
+        "Bearded Robinson in animal-skin by his hut, knife paused over wood; tense eyes fixed on fresh footprints leading down the beach.",
+        "Robinson crouched in foliage, hands reaching to untie a frightened man; careful, open expression inviting trust.",
+        "Robinson and Friday side by side at sunset, tending a fence and fire; easy smiles exchanged, warm light soft on their faces."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "At dawn, Robinson and Friday stand atop a cliff overlooking the calm ocean. A distant ship appears on the horizon. The camera slowly zooms toward their faces filled with awe and hope. The lighting is soft and golden.",
+        "Medium shot of Robinson and Friday waving toward the sea, the ship slowly approaching in the distance. The wind gently moves their hair and clothes. The moment feels triumphant yet bittersweet.",
+        "Wide shot of the island from above as the ship sails closer, with Robinson’s hut and camp visible below. The camera pans toward the sunrise over the ocean, symbolizing freedom and new beginnings. Smooth fade-out to end the story."
+      ],
+      "first_frame_prompt": [
+        "Robinson and Friday at a dawn cliff, eyes lifted to a tiny ship on the horizon; soft gold light washing their hopeful faces.",
+        "Robinson and Friday waving toward the distant vessel; wind catching their hair and sleeves; triumph brightened by a quiet ache.",
+        "Island and camp below as the ship nears; the two friends small against the view, faces turned toward a brightening sunrise."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

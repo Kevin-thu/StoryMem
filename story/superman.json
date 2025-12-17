@@ -1,0 +1,48 @@
+{
+  "story_name": "Superman: The Dawn of Hope",
+  "story_overview": "In this short and heartfelt retelling, Superman protects Metropolis from a sudden disaster while staying grounded in his humanity. The story follows him from his quiet life as Clark Kent to his transformation into Superman, saving the city, and ending with a moment of reflection above the skyline — reminding viewers that true strength lies in kindness and courage.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Early morning inside a small apartment. Clark Kent, wearing glasses and a neat shirt with rolled-up sleeves, sits by the window reading a newspaper. The morning light streams in, creating a calm and warm mood. Medium shot with gentle camera pan across the tidy room.",
+        "Close-up of Clark lowering the newspaper, his expression thoughtful as he hears distant sirens outside. The sunlight glints off his glasses. The atmosphere shifts from peaceful to alert. Slow push-in shot emphasizing his awareness.",
+        "Clark stands up quickly and removes his glasses, unbuttoning his shirt to reveal the iconic Superman symbol underneath. The motion is smooth and decisive. Medium shot with slight upward tilt, conveying transformation and purpose."
+      ],
+      "first_frame_prompt": [
+        "Clark in a warm sunlit apartment by the window, glasses on and sleeves rolled, quietly reading the paper; tidy room details in soft morning glow.",
+        "Clark lowering the paper, a thoughtful look sharpening into alertness; sunlight catching his lenses as distant sirens shift the mood.",
+        "Clark removing his glasses and opening his shirt to reveal the Superman emblem; decisive, uplifted posture signaling purpose."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "A bustling city street in Metropolis. People rush about, unaware of the danger. Suddenly, a large billboard starts to collapse above the crowd. The atmosphere is tense. Wide shot capturing the busy urban scene with tall buildings and sunlight reflecting on glass.",
+        "Superman flies in swiftly, catching the falling structure just before it hits the ground. Dust rises around him as he lowers it gently to safety. The mood is heroic and dramatic. Wide shot with slight slow motion for emphasis.",
+        "Close-up of Superman’s determined face as wind blows through his hair and cape. Pedestrians watch in awe; a child points up at him smiling. The moment feels inspiring and powerful. Medium shot focusing on emotional connection between hero and people."
+      ],
+      "first_frame_prompt": [
+        "Bright Metropolis street with crowded sidewalks and glass towers; a towering billboard above beginning to fail; tension in the air.",
+        "Superman braced beneath the falling structure, dust lifting around him as he lowers it to safety; calm strength at the center of chaos.",
+        "Superman’s focused face in the wind, cape streaming; a child below pointing up with a smile while onlookers stare in awe."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "High above the city skyline at sunset. Superman hovers quietly in the glowing orange sky, cape flowing gently in the wind. The city lights begin to flicker on below. Wide shot capturing peaceful contrast between power and serenity.",
+        "Superman lands on the Daily Planet rooftop. He looks over the city with a calm, reflective smile, then walks toward the edge as pigeons take flight around him. The atmosphere is tranquil and hopeful. Medium shot with soft tracking motion.",
+        "Close-up of Superman standing tall against the twilight sky, the ‘S’ emblem gleaming faintly. His expression is calm and resolute. The camera slowly pulls back and fades out, ending on the symbol of hope."
+      ],
+      "first_frame_prompt": [
+        "Superman hovering in an orange sunset above the skyline; cape gently moving as the city lights flicker on below; quiet, steady presence.",
+        "Superman on the Daily Planet roof with a soft, reflective smile; pigeons lifting into the air around him; tranquil, hopeful pause.",
+        "Close on Superman against deepening twilight; the ‘S’ emblem catching a faint glow; calm, resolute gaze ready to fade out."
+      ],
+      "cut": [true, true, false]
+    }
+  ]
+}

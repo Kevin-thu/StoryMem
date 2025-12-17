@@ -1,0 +1,60 @@
+{
+  "story_name": "Jane Eyre: A Quiet Strength",
+  "story_overview": "A simplified retelling of Jane Eyre’s journey from hardship to love and independence. The story follows her from her difficult childhood at Lowood School to her new life as a governess at Thornfield Hall, her growing affection for Mr. Rochester, and finally her self-discovery and reunion with him. The focus is on gentle emotion, quiet resilience, and poetic visuals rather than complex drama.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A young Jane Eyre, dressed in a plain gray dress, sits alone by a cold window in a dimly lit room. Snow falls softly outside as she holds a small book close, her expression calm but lonely. Wide shot with soft, cool lighting evoking isolation.",
+        "Jane walks through the halls of Lowood School, holding a stack of worn books. Other girls pass by quietly, the atmosphere strict yet serene. Medium tracking shot following her steps, conveying endurance and quiet resolve."
+      ],
+      "first_frame_prompt": [
+        "Young Jane in a plain gray dress seated by a frosted window, snow drifting outside; small book held close to her chest; calm, lonely gaze in soft blue light.",
+        "Jane moving through a quiet hallway with worn books in her arms; straight posture and composed expression; other girls pass by in muted uniforms."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Jane arrives at Thornfield Hall, a grand but shadowy manor surrounded by mist. She steps down from a small carriage, gazing up at the mansion with curiosity and calm courage. Wide establishing shot with slow dolly in.",
+        "Jane walks through the hall’s candle-lit corridors, her footsteps echoing. The stone walls and flickering lights create a mysterious, gothic mood. Medium shot with gentle camera pan following her movement.",
+        "In the library, Jane meets Mr. Rochester, a stern man in dark formal clothes. He sits near the fireplace, and she stands politely, their eyes meeting briefly. Warm lighting contrasts their reserve. Medium two-shot with slow push-in to capture tension."
+      ],
+      "first_frame_prompt": [
+        "Jane stepping from a small carriage toward Thornfield Hall; mist softening the scene; her gaze lifted with quiet courage and curiosity.",
+        "Jane in a candle-lit corridor; warm flicker on her face, cool stone around; measured steps and attentive eyes.",
+        "Jane standing by the fireplace opposite Rochester in dark formal attire; brief, reserved eye contact; warm firelight easing their restraint."
+      ],
+      "cut": [true, true, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "Jane and Mr. Rochester walk together in the garden under soft morning light. Jane’s simple gray dress sways in the breeze as they share a quiet conversation. Wide shot showing harmony and mutual respect.",
+        "Close-up of Jane looking slightly down, then smiling subtly as the wind brushes her hair. The tone is gentle and romantic. Medium close-up with shallow depth of field focusing on her face.",
+        "At night, Jane stands by her window, looking out at the moonlit garden. A faint sadness lingers on her face as she reflects on her growing feelings. Soft blue lighting, slow zoom-out to show solitude."
+      ],
+      "first_frame_prompt": [
+        "Jane and Rochester walking side by side in soft morning light; gentle breeze moving Jane’s gray dress; calm expressions and easy spacing.",
+        "Jane’s face in gentle focus; eyes lowered, a slight smile forming as wind touches her hair; warm, delicate mood.",
+        "Jane at her window in blue moonlight; thoughtful eyes toward the garden; quiet solitude shaping her expression."
+      ],
+      "cut": [true, true, true]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "After leaving Thornfield, Jane stands on a quiet countryside road at dawn, wearing a simple cloak and holding a small satchel. The light is soft and hopeful, suggesting renewal. Wide shot capturing open landscape and emotional freedom.",
+        "Later, she returns to Thornfield, now partially ruined. Smoke and ivy cover the walls. She walks slowly through the courtyard, searching. Medium shot with slow handheld motion creating intimacy.",
+        "Jane finds the blind Mr. Rochester sitting by the fire. She gently places her hand on his. His expression softens with recognition and relief. Warm golden light fills the room, symbolizing peace and reunion. Close-up shot with smooth fade to black."
+      ],
+      "first_frame_prompt": [
+        "Jane on a dawn road in a simple cloak with a small satchel; soft hopeful light on her face; open fields and faint mist around her.",
+        "Jane entering the ruined courtyard; ivy and faint smoke in the background; careful steps and a searching gaze.",
+        "By the hearth, Jane’s hand resting on Rochester’s; his face softening in recognition; warm golden firelight bathing them in calm."
+      ],
+      "cut": [true, true, true]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_name": "Neo Awakens in the Matrix",
+  "story_overview": "This short video tells the iconic awakening of Neo — from his ordinary life in the simulated Matrix to the moment he begins to perceive the truth. The story follows Neo’s confusion, his encounter with Morpheus, and his shocking realization that the world around him is not real. The atmosphere gradually shifts from calm and mysterious to tense and surreal, echoing Neo’s transformation from an ordinary man to the chosen one.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Nighttime in a dimly lit apartment filled with computer screens and cables. Neo, a young man in a black T-shirt, sits in front of his monitor with tired eyes as green code reflects on his face. The atmosphere is quiet and mysterious. Medium shot with soft flickering light from the monitors.",
+        "Neo leans closer to the screen as strange text appears: 'Wake up, Neo.' His brows furrow in confusion. The computer glow brightens slightly, bathing the room in green tones. Close-up shot of his face and the screen reflection, creating a tense, eerie mood.",
+        "Suddenly, his phone rings. Neo hesitates, then picks it up and hears a deep voice saying, 'They are coming for you.' The camera slowly pushes in toward Neo’s anxious expression. The lighting flickers slightly, emphasizing the sense of urgency."
+      ],
+      "first_frame_prompt": [
+        "Neo in a dark apartment facing glowing monitors; green code reflecting on tired eyes; quiet, guarded focus on his face.",
+        "Neo leaning toward the screen, green light washing his features; brow furrowed as the message appears; tense curiosity in his eyes.",
+        "Neo with phone at his ear, breath held; anxious gaze, green flicker across his cheeks; urgency gathering in his expression."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Neo walks through the dim corridors of his office building, dressed in a gray suit. He glances nervously behind him as agents in black suits enter the building. The atmosphere is tense and suspenseful. Wide shot showing Neo moving quickly through the cubicles.",
+        "Neo hides behind a wall as agents pass by. Sweat glistens on his forehead; his breathing quickens. The color palette is cold and metallic. Medium close-up with a slow pan following his movement.",
+        "He looks out of a window, realizing there’s no escape. He hesitates, gripping the edge of the window frame as the wind blows his tie. The camera tilts upward slightly, emphasizing the impossible choice he faces. The tone is anxious and cinematic."
+      ],
+      "first_frame_prompt": [
+        "Neo in a gray suit moving fast through cubicles; nervous glance over his shoulder; cold blue-gray light sharpening his profile.",
+        "Neo pressed against a wall, sweat at his brow; agents blurred as they pass; shallow breath and taut jaw in the chill light.",
+        "Neo at the window gripping the frame; tie lifting in the wind, dread and resolve wrestling in his eyes; city drop implied beyond."
+      ],
+      "cut": [true, true, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "Neo sits across from Morpheus in a dimly lit, empty room with leather chairs and green-tinted lighting. Morpheus, wearing a long black coat and sunglasses, calmly presents two pills in his hands. Medium shot capturing their intense, silent exchange.",
+        "Close-up of the red and blue pills in Morpheus’s palms. Neo’s trembling hand hovers uncertainly, then slowly reaches for the red pill. The atmosphere is heavy and suspenseful, with a slow zoom on the pills.",
+        "Neo swallows the red pill and looks around as the room begins to distort and ripple. The colors warp and reflections bend around him. Close-up on his startled face as the environment flickers like digital static."
+      ],
+      "first_frame_prompt": [
+        "Neo and Morpheus facing each other in green-tinted calm; Morpheus presenting two pills; Neo’s guarded, questioning gaze locked on his hands.",
+        "Morpheus’s palms holding red and blue; Neo’s trembling fingers hesitating above the red; breath-heavy suspense on his knuckles and lips.",
+        "Neo’s face tightening as reality ripples; green hues warping at the edges; shock widening his eyes after taking the red pill."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "Neo wakes up in a dark, liquid-filled pod. His body is pale and connected to mechanical cables. The atmosphere is cold and alien, with dim red lighting. Wide shot showing the surreal biomechanical environment around him.",
+        "He struggles weakly, gasping as the cables detach one by one. The liquid ripples as he rises. Medium shot focusing on his confused, terrified expression as the reality sinks in.",
+        "A machine arm lifts Neo from the pod, revealing a massive field of identical pods stretching into the distance. The camera slowly pulls back to show the endless rows, underscoring the magnitude of the illusion he has escaped. The scene ends in silence and awe."
+      ],
+      "first_frame_prompt": [
+        "Neo submerged in a red-lit pod, pale skin veined with cables; dazed eyes blinking in cold, alien stillness.",
+        "Neo’s face emerging from fluid as cables release; gasping shock, lips trembling; fear and confusion written across him.",
+        "Neo lifted above rows of endless pods; small, fragile figure against the vast field; stunned silence on his face as the scale unfolds."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

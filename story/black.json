@@ -1,0 +1,46 @@
+{
+  "story_name": "The Street Musician",
+  "story_overview": "A humble black street musician finds beauty and purpose in everyday life through his music. From performing on a busy city street to sharing a smile with a child and returning home to play quietly under the soft glow of evening light, the story captures moments of sincerity, resilience, and the quiet joy of self-expression.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Early morning in a small apartment. A black man in his 30s, wearing a simple gray hoodie and jeans, carefully opens an old guitar case on his small table. The room is lit by soft morning light from the window, filled with warm, earthy tones. Medium shot focusing on his calm expression as he tunes the strings.",
+        "He stands by the window, strumming softly, looking out at the awakening city streets below. The sound of the strings fills the quiet air. Gentle camera pan from the window view to his face, capturing a sense of peace and purpose before he heads out."
+      ],
+      "first_frame_prompt": [
+        "Focus on the black man’s face and upper torso as he opens the worn guitar case on the table; gray hoodie details, calm focused expression, soft morning light on his skin; background subdued.",
+        "Close on the man at the window with guitar held near his chest, fingers poised to strum; soft light shaping his face and eyes; city backdrop kept minimal."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "The man sets up on a busy city corner, placing his guitar case open on the ground. People pass by — some glance, others hurry. He sits on a small stool and begins playing. Wide shot with bustling urban background and sunlight reflecting off buildings.",
+        "A little girl in a red coat stops to watch him play, her eyes wide with curiosity. The man smiles warmly, slightly nodding to her as he continues strumming. Smooth transition from previous shot; handheld camera capturing the authenticity of the moment.",
+        "Close-up of the man's hands moving gracefully on the guitar strings, the rhythm blending with the ambient city sounds. The sunlight flickers across the instrument, symbolizing hope. Shallow focus emphasizing texture and emotion."
+      ],
+      "first_frame_prompt": [
+        "Street musician centered, seated with open case at his feet; relaxed posture and attentive gaze; pedestrians and city corner softened behind him.",
+        "Tight two-shot on the musician and the little girl in a red coat; his gentle smile and soft eye contact foregrounded; background minimal.",
+        "Extreme close-up on his fingertips shaping chords and plucking strings; shallow focus isolating touch and motion; sun flicker on skin and wood grain."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "As the day ends, the street grows quieter. The man packs up his guitar, pausing to look at the coins in his case — not much, but enough to bring a faint smile. The sky turns orange and pink above the buildings. Medium-wide shot with gentle dolly back.",
+        "He walks home through narrow alleys lit by warm streetlights, guitar slung over his shoulder. His steps are slow but peaceful, matching the fading hum of the city. Smooth continuation from last frame with soft ambient background.",
+        "At night, back in his apartment, he sits by the window again, softly playing the guitar under a dim lamp. The camera slowly zooms out through the window, showing the city glowing beyond. The mood is calm and introspective, ending on a gentle fade to black."
+      ],
+      "first_frame_prompt": [
+        "Musician kneeling over his open case, faint smile as he looks at the coins; warm evening light on his face; surroundings softened.",
+        "Upper-body focus as he walks with guitar over his shoulder; relaxed shoulders and peaceful gaze forward; warm streetlight glow across his face.",
+        "Seated by the window under a dim lamp, hands gently cradling the guitar; contemplative look with soft highlights on his face; city lights abstract in the background."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

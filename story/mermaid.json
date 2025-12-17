@@ -1,0 +1,50 @@
+{
+  "story_name": "The Mermaid's Secret",
+  "story_overview": "A gentle tale about a curious mermaid who dreams of the human world. Living in a serene underwater kingdom, she discovers a mysterious seashell that shows her visions of the shore. Drawn by wonder, she secretly visits the beach under moonlight, where she befriends a young human artist sketching by the sea. Their brief but magical meeting changes them both, leaving behind a promise of friendship between two worlds.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A tranquil underwater scene filled with colorful corals and small glowing fish. The mermaid, with flowing turquoise hair and a shimmering silver-blue tail, swims gracefully through beams of sunlight filtering from above. Wide shot with gentle camera glide capturing the beauty of her world.",
+        "Close-up of the mermaid curiously reaching toward a drifting seashell that glows faintly. Her eyes reflect the light, full of wonder and longing. Medium close-up with soft lighting, creating a dreamy, magical mood.",
+        "The mermaid opens the glowing seashell, revealing a vision of the human shore — waves lapping against rocks, a figure sketching by the water. Her expression turns thoughtful and hopeful. Medium shot, smooth transition with a soft light fade."
+      ],
+      "first_frame_prompt": [
+        "Mermaid with flowing turquoise hair and silver-blue tail gliding through sunbeams; calm, dreamy gaze as tiny glowing fish drift around her.",
+        "Mermaid reaching toward a faintly glowing seashell; reflected light shimmering in her eyes; gentle, curious expression in soft aqua hues.",
+        "Mermaid holding the seashell open, soft glow lighting her face; a delicate vision of a moonlit shore and a lone figure sketching; hopeful, thoughtful eyes."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Night falls over the calm ocean. The mermaid quietly surfaces near the moonlit shore, her tail glistening under silver light. Gentle waves sparkle around her. Wide shot showing the vastness of sea and sky.",
+        "The mermaid crawls slightly onto the sand, gazing curiously at a young human artist sitting nearby, sketching by lantern light. The artist doesn’t notice her yet. Medium shot, low angle emphasizing quiet curiosity.",
+        "The artist hears a soft splash and looks up, startled but amazed. The mermaid meets his gaze — a silent moment of wonder passes between them. Medium close-up alternating between their faces, slow and steady camera movement.",
+        "The artist offers her his sketchbook, showing drawings of sea creatures. The mermaid smiles shyly and touches the page with wet fingers, leaving a faint shimmering mark. Warm, magical atmosphere. Close-up with soft glow and calm music tone implied."
+      ],
+      "first_frame_prompt": [
+        "Mermaid surfacing at a moonlit shore; silver light glistening on her tail; quiet, wide-eyed awe as stars reflect on the water.",
+        "Mermaid partly on the sand watching a young artist sketch by a warm lantern; soft surf behind; curious, gentle focus on her face.",
+        "Artist lifting his gaze, mermaid meeting his eyes; shared breath of wonder; blue-silver night light soft on their faces.",
+        "Sketchbook opened with sea-creature drawings; mermaid’s wet fingertips touching the page, leaving a faint shimmering trace; shy smile and warm lantern glow."
+      ],
+      "cut": [true, false, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "Dawn breaks, painting the sky in pink and gold. The mermaid watches the horizon as the artist waves goodbye from the beach. She smiles softly, then dives back into the sea. Wide shot, smooth camera tilt from the shore to the waves.",
+        "Underwater again, the mermaid places the glowing seashell beside a coral rock. The seashell now shows a faint image of the smiling artist. Medium close-up with tranquil lighting and flowing hair movement.",
+        "The mermaid swims upward through rays of morning light, her silhouette shimmering against the surface. The mood is serene and hopeful. Wide shot with slow upward camera motion, fading into bright white light to end the story."
+      ],
+      "first_frame_prompt": [
+        "Mermaid at dawn looking toward the horizon; soft pink-gold light on her face as the distant artist waves; gentle farewell in her smile.",
+        "Mermaid setting the glowing seashell by a coral; inside, a faint image of the smiling artist; tranquil blue light and drifting hair around her.",
+        "Mermaid ascending through morning sunrays; shimmering silhouette approaching the surface; serene, hopeful glow leading to bright fade."
+      ],
+      "cut": [true, true, false]
+    }
+  ]
+}

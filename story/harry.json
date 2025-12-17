@@ -1,0 +1,46 @@
+{
+  "story_name": "Harry Potter and the Midnight Spell",
+  "story_overview": "One quiet night at Hogwarts, Harry Potter discovers a mysterious glowing book in the library that leads him to uncover a forgotten spell. Curious and brave, he experiments with the spell in secret, but something unexpected happens—bringing an old memory of his parents to life for a brief, magical moment. The story captures Harry’s courage, curiosity, and the warmth of fleeting connection in the stillness of the night.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "The camera glides through the dimly lit corridors of Hogwarts at midnight, candles floating in the air. Harry Potter, wearing his Gryffindor robe and holding his wand, quietly walks down the stone hallway. The mood is mysterious and calm. Wide tracking shot emphasizing the flickering candlelight and echoes of footsteps. Realistic style.",
+        "Harry enters the dark Hogwarts library. Rows of ancient books stretch into the shadows. He carries a small lantern, its warm glow reflecting in his glasses. The air feels heavy with secrets. Medium shot following Harry as he scans the shelves, his expression curious and cautious."
+      ],
+      "first_frame_prompt": [
+        "Harry in Gryffindor robe holding his wand, candlelight flickering across his face; calm, attentive expression as he walks through midnight shadows.",
+        "Harry stepping into the library with a small lantern; warm glow reflected in his round glasses; curious eyes scanning shelves that fade into darkness."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Close-up of Harry’s hand pulling out an old, dusty spellbook with a faint golden shimmer on its cover. The lantern light flickers as he opens it, revealing moving handwritten text. Close-up with subtle camera zoom to highlight the magical motion of the ink.",
+        "Harry sits at a wooden library table, whispering the spell softly. A swirl of faint blue light rises from the book and floats around him. His eyes widen in wonder. Medium close-up capturing his expression and the soft glow illuminating his face.",
+        "The blue light grows brighter and shapes itself into a gentle silhouette—an ethereal vision of Lily and James Potter smiling at him. The atmosphere turns emotional and dreamlike. Slow pan as Harry looks up, eyes filled with warmth and disbelief."
+      ],
+      "first_frame_prompt": [
+        "Harry’s hand on a dusty spellbook; faint golden shimmer along the cover, lantern flicker on his fingers, motes of dust around.",
+        "Harry at the table whispering; soft blue swirls rising from the open book tint his face; eyes widening with cautious wonder.",
+        "Harry looking up through pale blue glow; ethereal silhouettes of his parents forming before him; tenderness and disbelief in his gaze."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "The glowing figures slowly fade, leaving behind a single golden spark that settles on Harry’s wand. The library grows quiet again. Medium shot showing Harry sitting still, gazing at his wand with soft awe.",
+        "Harry gently closes the spellbook, standing up and glancing once more at the empty chair where the vision appeared. The lantern’s light flickers softly. Wide shot with slow camera pullback, enhancing the peaceful, nostalgic tone.",
+        "He exits the library, walking down the long corridor as dawn’s first light spills through tall windows. The castle feels serene and timeless. Long shot from behind, fading to soft morning light as the story ends."
+      ],
+      "first_frame_prompt": [
+        "Harry seated with quiet awe as a single golden spark settles on his wand; fading blue residue around him, breath held.",
+        "Harry closing the spellbook, eyes lingering on the empty chair where the vision was; soft lantern light touching his face with nostalgia.",
+        "Harry walking toward pale dawn light, wand at his side; calm shoulders, steady pace, morning hues softening his silhouette."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

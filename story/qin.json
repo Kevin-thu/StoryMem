@@ -1,0 +1,60 @@
+{
+  "story_name": "The First Emperor of China: Qin Shi Huang",
+  "story_overview": "This short film depicts the rise and legacy of Qin Shi Huang, the First Emperor of a unified China. From his vision to unite the warring states, through the monumental construction of the Great Wall and the Terracotta Army, to his pursuit of immortality, the story captures the grandeur, ambition, and mystery surrounding the emperor who shaped Chinese civilization.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Wide shot of an ancient Chinese battlefield at dawn, banners fluttering in the wind. Young King Zheng of Qin, dressed in dark armor with golden accents, stands atop a chariot surveying the land. Dust rises as soldiers march in formation below. The atmosphere is determined and grand. Cinematic wide shot with slow panning across the army.",
+        "Medium shot of King Zheng dismounting his chariot and unsheathing his sword, raising it high as sunlight breaks through clouds. Soldiers kneel and cheer, their armor glinting. The camera tilts upward to emphasize his authority and the dawn of unification.",
+        "Close-up of King Zheng’s focused expression as he gazes toward the horizon, the reflection of distant fire and banners in his eyes. The mood is resolute and visionary. Smooth transition from the previous shot with slight camera push-in."
+      ],
+      "first_frame_prompt": [
+        "Young King Zheng atop a chariot at dawn; dark armor with golden accents catching first light; resolute gaze over marching ranks as Qin banners ripple.",
+        "King Zheng stepping down and lifting his unsheathed sword into a sunbeam; soldiers kneeling and cheering around him; authority radiating from his stance.",
+        "Close on Zheng’s face, eyes fixed on the horizon; reflections of fire and banners in his pupils; calm, visionary resolve."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "A wide establishing shot of the newly built Xianyang Palace, with grand courtyards, red pillars, and golden roofs gleaming under the sun. Qin Shi Huang, now wearing a black and gold imperial robe with a jade crown, walks up the palace steps. The mood is majestic and triumphant.",
+        "Medium shot of Qin Shi Huang standing before a map carved in stone, showing the unified empire. Ministers bow around him as he declares the beginning of a new era. The camera slowly circles to highlight the scale and solemnity.",
+        "Wide shot of laborers constructing the Great Wall under the scorching sun — endless lines of workers hauling stones across rugged mountains. The scene transitions from the palace to the Great Wall through a smooth dissolve, connecting ambition to action."
+      ],
+      "first_frame_prompt": [
+        "Qin Shi Huang in black-and-gold robes with a jade crown ascending Xianyang’s steps; proud posture, sunlight flashing on red pillars and golden roofs.",
+        "Emperor before a stone-carved map of the realm; ministers bowed at the edges; composed face and steady hand marking a new era.",
+        "Workers straining across mountain ridges as the wall snakes into the horizon; sunlit dust and determined faces driving the imperial vision."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "Interior of a dimly lit underground chamber filled with clay soldiers — the Terracotta Army under construction. Artisans sculpt warriors and horses by torchlight, their faces illuminated by flickering flames. The atmosphere is mysterious and reverent. Slow tracking shot through the chamber.",
+        "Medium shot of Qin Shi Huang walking among the unfinished clay figures, his expression calm but distant. He touches one warrior’s shoulder, contemplating eternity. The mood is somber and reflective, with faint echoes in the background."
+      ],
+      "first_frame_prompt": [
+        "Torchlit chamber of half-formed clay soldiers; artisans bent over details, firelight painting focused faces; hushed, reverent concentration.",
+        "Emperor moving among towering clay figures; his hand resting on a warrior’s shoulder; distant, contemplative eyes measuring eternity."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "Wide shot of Qin Shi Huang’s imperial carriage traveling through misty mountains, searching for the elixir of immortality. The atmosphere is ethereal and melancholic, with soft blue tones and slow camera movement following the procession.",
+        "Medium shot of the emperor stepping out near the coast, gazing at the vast ocean under a cloudy sky. His robe flows in the wind as waves crash below. The camera pans slowly from behind, emphasizing solitude and destiny.",
+        "Final close-up of the emperor’s empty throne in the palace, light from a setting sun spilling across it. The scene fades to darkness, leaving only the echo of distant drums — a quiet symbol of his eternal legend."
+      ],
+      "first_frame_prompt": [
+        "Imperial procession threading a blue-misted mountain pass; Qin Shi Huang’s carriage central, riders flanking; questing melancholy on every face.",
+        "Emperor at a wind-swept coast looking out over the gray-blue sea; robe streaming, jaw set; solitary resolve against crashing waves.",
+        "Empty imperial throne aglow with low, amber sunlight; long shadows stretching across carved floors; quiet, enduring legend implied."
+      ],
+      "cut": [true, true, true]
+    }
+  ]
+}
