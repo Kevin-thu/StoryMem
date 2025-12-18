@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryMem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景视频 -->
+    <div class="background-video-container" id="background-video">
+        <video class="bg-video active" autoplay muted playsinline>
+            <source src="assets/princess.mp4" type="video/mp4">
+        </video>
+        <video class="bg-video" muted playsinline>
+            <source src="assets/robot.mp4" type="video/mp4">
+        </video>
+        <video class="bg-video" muted playsinline>
+            <source src="assets/robinson.mp4" type="video/mp4">
+        </video>
+        <!-- 可以添加更多视频，只需复制上面的 video 标签并修改 src -->
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="project-title">StoryMem</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#method">Method</a></li>
+                <li><a href="#demos">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主标题区域 -->
+    <section id="home" class="header">
+        <div class="container">
+            <h1 class="project-title fade-in">StoryMem</h1>
+            <p class="project-subtitle fade-in">Multi-shot Long Video Storytelling with Memory</p>
+            
+            <div class="authors fade-in">
+                <div class="author-names">
+                    <div class="author-line">
+                        <a href="https://kevin-thu.github.io/homepage/" class="author-link">Kaiwen Zhang</a><sup>1,2*</sup>
+                        <a href="https://liming-jiang.com/" class="author-link">Liming Jiang</a><sup>2†</sup>
+                        <a href="https://angtianwang.github.io/" class="author-link">Angtian Wang</a><sup>2</sup>
+                        <a href="https://www.jacobzhiyuanfang.me/" class="author-link">Jacob Zhiyuan Fang</a><sup>2</sup>
+                    </div>
+                    <div class="author-line">
+                        <a href="https://tiancheng-zhi.github.io/" class="author-link">Tiancheng Zhi</a><sup>2</sup>
+                        <a href="https://scholar.google.com/citations?user=0TIYjPAAAAAJ&hl=en" class="author-link">Qing Yan</a><sup>2</sup>
+                        <a href="https://scholar.google.com/citations?user=VeTCSyEAAAAJ&hl=en" class="author-link">Hao Kang</a><sup>2</sup>
+                        <a href="https://scholar.google.com/citations?user=mFC0wp8AAAAJ&hl=en" class="author-link">Xin Lu</a><sup>2</sup>
+                        <a href="https://xingangpan.github.io/" class="author-link">Xingang Pan</a><sup>1§</sup>
+                    </div>
+                </div>
+                <div class="author-affiliations">
+                    <sup>1</sup>S-Lab, Nanyang Technological University &nbsp;&nbsp; <sup>2</sup>Intelligent Creation, ByteDance
+                </div>
+                <div class="author-notes">
+                    <sup>*</sup>Work done during internship at ByteDance &nbsp;&nbsp; <sup>†</sup>Project Lead &nbsp;&nbsp; <sup>§</sup>Corresponding Author
+                </div>
+            </div>
+
+            <div class="links fade-in">
+                <a href="#" class="link-btn">📄 Paper</a>
+                <a href="#" class="link-btn">💻 Code</a>
+                <a href="#" class="link-btn">🤗 Model</a>
+                <!-- <a href="#" class="link-btn">📊 Dataset</a> -->
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- 摘要部分 -->
+    <section id="abstract" class="section">
+        <div class="container">
+            <h2 class="section-title">Abstract</h2>
+            <div class="abstract">
+                <p>
+                    Visual storytelling requires generating multi-shot videos with cinematic quality and long-range
+                    consistency. Inspired by human memory, we propose <b><span style="font-family: 'Playfair Display', 'Cormorant Garamond', 'Allura', serif; font-style: italic;">StoryMem</span></b>, a paradigm that reformulates
+                    long-form video storytelling as iterative shot synthesis conditioned on explicit visual memory,
+                    transforming pre-trained single-shot video diffusion models into multi-shot storytellers. This is
+                    achieved by a novel <b><i>Memory-to-Video (M2V)</i></b> design, which maintains a compact and dynamically
+                    updated memory bank of keyframes from historical generated shots. The stored memory is then
+                    injected into single-shot video diffusion models via latent concatenation and negative RoPE shifts
+                    with only LoRA fine-tuning. A semantic keyframe selection strategy, together with aesthetic 
+                    preference filtering, further ensures informative and stable memory throughout generation. Moreover,
+                    the proposed framework naturally accommodates smooth shot transitions and customized story
+                    generation application. To facilitate evaluation, we introduce <b><i>ST-Bench</i></b>, a diverse benchmark
+                    for multi-shot video storytelling. Extensive experiments demonstrate that <b><span style="font-family: 'Playfair Display', 'Cormorant Garamond', 'Allura', serif; font-style: italic;">StoryMem</span></b> achieves
+                    superior cross-shot consistency over previous methods while preserving high aesthetic quality and
+                    prompt adherence, marking a significant step toward coherent minute-long video storytelling.
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- 高亮特性 -->
+    <section id="highlights" class="section">
+        <div class="container">
+            <h2 class="section-title">Highlights</h2>
+            <div class="highlight-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎬</div>
+                    <div class="highlight-title">Multi-scene Multi-shot Story</div>
+                    <div class="highlight-desc">Generates coherent, minute-long stories across multiple scenes with shot-level control and single-shot costs.</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🧠</div>
+                    <div class="highlight-title">Persistent Memory</div>
+                    <div class="highlight-desc">Maintains consistent character appearance and scene elements throughout multi-shot video storytelling.</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎨</div>
+                    <div class="highlight-title">Cinematic Quality</div>
+                    <div class="highlight-desc">Inherits high aesthetics, prompt adherence, and camera control from state-of-the-art single-shot video generation models.</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🧩</div>
+                    <div class="highlight-title">Flexible Design</div>
+                    <div class="highlight-desc">Natively supports smooth shot connections and reference-guided customized story generation applications.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">✦ ✦ ✦</div>    
+
+    <!-- Method Overview -->
+    <section id="method" class="section">
+        <div class="container">
+            <h2 class="section-title">Method Overview</h2>
+            <div class="method-overview">
+                <div class="method-image">
+                    <img src="assets/pipeline.png" alt="StoryMem Pipeline">
+                </div>
+                <div class="method-description">
+                    <p>
+                        <b><span style="font-family: 'Playfair Display', 'Cormorant Garamond', 'Allura', serif; font-style: italic;">StoryMem</span></b> generates each shot conditioned on a memory bank that stores
+                        keyframes from previously generated shots (<b><i>Memory-to-Video, M2V</i></b>). During generation, the selected memory frames are encoded by a 3D VAE,
+                        fused with noisy video latents and binary masks, and fed into a LoRA-finetuned memory-conditioned Video DiT to
+                        synthesize the current shot. After generating each shot, semantic keyframe selection and aesthetic preference filtering
+                        are applied to obtain informative and reliable memory frames, enabling long-range cross-shot consistency and natural
+                        narrative progression. By iteratively generating shots with memory updates, <b><span style="font-family: 'Playfair Display', 'Cormorant Garamond', 'Allura', serif; font-style: italic;">StoryMem</span></b> produces coherent minute-long,
+                        multi-shot story videos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- 视频展示区域 -->
+    <section id="demos" class="video-section">
+        <div class="container">
+            <h2 class="section-title">Video Results</h2>
+            
+            <!-- 多Demo翻页版 -->
+            <div class="video-container">
+                <div class="demo-main-title" style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.8rem; font-weight: 600; color: #ffffff; margin-bottom: 0.5rem;">Multi-shot Long Video Storytelling</h2>
+                </div>
+                
+                <div class="demo-tabs-wrapper">
+                    <button class="demo-nav-btn demo-nav-left" id="demoNavLeft" aria-label="Previous demo">‹</button>
+                    <div class="demo-tabs">
+                        <button class="demo-tab active" data-demo="0">Story of Lin Daiyu 🌸</button>
+                        <button class="demo-tab" data-demo="1">Story of Santa Claus 🎅🎄</button>
+                        <button class="demo-tab" data-demo="2">Story of Prince and Princess 💑</button>
+                        <!-- 可以添加更多tab -->
+                    </div>
+                    <button class="demo-nav-btn demo-nav-right" id="demoNavRight" aria-label="Next demo">›</button>
+                </div>
+                
+                <!-- Demo 1 -->
+                <div class="demo-content active" data-demo-index="0">
+                    <div class="video-description">
+                        <div style="text-align: center;">
+                            <b>Story of Lin Daiyu's First Spring in the Garden</b><br>
+                        </div>
+                        A gentle, lyrical portrait of Lin Daiyu arriving at the Jia household, discovering the Grand View Garden, meeting Jia Baoyu, and finding solace in poetry and falling blossoms. Across simple, quiet moments, her grace, sensitivity, and bond with nature unfold in a soft, painterly atmosphere.
+                    </div>
+                    <div class="interactive-video-container">
+                    <div class="video-player-section">
+                        <video id="storyVideoPlayer" loop autoplay muted playsinline controls preload="auto">
+                            <source src="assets/daiyu.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <div class="scenes-list">
+                        <!-- Scene 1, Shot 1 -->
+                        <div class="scene-item active" data-time="0" data-text="Early spring courtyard outside the Jia residence gate. Lin Daiyu, a slender teenage girl in pale green hanfu with a light cloak, steps down from a sedan chair, holding a silk handkerchief. She glances up, eyes clear and slightly wistful, as a maid lifts the bamboo curtain. Soft morning light, faint mist. Wide establishing shot, gentle dolly-in.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-1.jpg" alt="Shot 1" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 1, Shot 1</div>
+                                <div class="scene-description">Wide shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 1, Shot 2 -->
+                        <div class="scene-item" data-time="5" data-text="Daiyu pauses by a stone path lined with budding plum branches. She adjusts her cloak and draws a small breath, a calm, poised expression. Two maids follow at a respectful distance carrying a book bundle. Quiet, elegant mood with muted colors. Medium shot, slow left-to-right pan following her walk.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-2.jpg" alt="Shot 2" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 1, Shot 2</div>
+                                <div class="scene-description">Medium shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 1, Shot 3 -->
+                        <div class="scene-item" data-time="11" data-text="At the carved wooden threshold, a house steward bows. Daiyu inclines her head with a subtle smile, handkerchief lightly held. Interior lanterns glow warm against the cool outdoor tones. Close-up on her face and hands, shallow depth of field, no cut from previous movement for a seamless entrance.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-3.jpg" alt="Shot 3" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 1, Shot 3</div>
+                                <div class="scene-description">Close-up</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 1 -->
+                        <div class="scene-item" data-time="15.5" data-text="Inside a corridor opening to the Grand View Garden: winding corridor beams, rockery, and a small pond with koi. Daiyu stands at the railing, looking at reflections on ripples, her sleeve brushing the carved wood. The mood is lyrical and quiet. Wide shot with slow tilt down to the water.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-4.jpg" alt="Shot 4" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 2, Shot 4</div>
+                                <div class="scene-description">Wide shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 2 -->
+                        <div class="scene-item" data-time="21" data-text="She kneels briefly to straighten a sprig fallen on the stone step, her fingers delicate, expression soft with thought. The maid offers her a simple fan; she accepts with a nod. Medium close-up, steady camera, soft breeze stirring her hair ribbons.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-5.jpg" alt="Shot 5" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 2, Shot 5</div>
+                                <div class="scene-description">Medium close-up</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 3 -->
+                        <div class="scene-item" data-time="25.5" data-text="A gust shakes early peach blossoms; petals drift around her as she lifts her gaze. She lightly opens the fan, eyes bright then pensive. Close-up with petals crossing frame, gentle rack focus from petals to her eyes.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-6.jpg" alt="Shot 6" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 2, Shot 6</div>
+                                <div class="scene-description">Close-up</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 1 -->
+                        <div class="scene-item" data-time="30.5" data-text="By a pavilion near a stream, Jia Baoyu approaches—youthful, refined, wearing light blue robe with a jade pendant. He slows and offers a courteous bow; Daiyu returns a measured nod. Light filters through latticework, creating patterned shadows. Two-shot, medium wide, static.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-7.jpg" alt="Shot 7" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 3, Shot 7</div>
+                                <div class="scene-description">Two-shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 2 -->
+                        <div class="scene-item" data-time="36" data-text="They sit across a low stone table with tea. Baoyu speaks softly, curious; Daiyu listens, then answers with a faint smile, gaze steady yet reserved. Steam curls from porcelain cups. Medium shot alternating gentle over-the-shoulder angles, smooth match cut implied.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-8.jpg" alt="Shot 8" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 3, Shot 8</div>
+                                <div class="scene-description">Medium shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 3 -->
+                        <div class="scene-item" data-time="40" data-text="A quiet shared laugh as a petal lands on Baoyu's sleeve; he brushes it away, and Daiyu's eyes follow the falling petal to the stream. The atmosphere is warm and restrained. Medium close-up on their hands and the jade catching light; subtle push-in.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-9.jpg" alt="Shot 9" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 3, Shot 9</div>
+                                <div class="scene-description">Medium close-up</div>
+                            </div>
+                        </div>
+                        <!-- Scene 4, Shot 1 -->
+                        <div class="scene-item" data-time="45" data-text="Late afternoon by a bamboo grove bench. Daiyu sits alone, a slim poetry booklet on her lap, petals scattered on the ground. Sunlight turns golden, cicadas faint in the distance. Wide, serene static shot framing her small figure amid tall bamboo.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-10.jpg" alt="Shot 10" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 4, Shot 10</div>
+                                <div class="scene-description">Wide shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 4, Shot 2 -->
+                        <div class="scene-item" data-time="50" data-text="She copies a couplet with a brush on small rice paper, pauses, and gently gathers a few fallen petals into her handkerchief. Expression tender yet distant. Medium close-up on brush, ink, and her calm profile; ambient rustle of leaves implied.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-11.jpg" alt="Shot 11" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 4, Shot 11</div>
+                                <div class="scene-description">Medium close-up</div>
+                            </div>
+                        </div>
+                        <!-- Scene 4, Shot 3 -->
+                        <div class="scene-item" data-time="54" data-text="She ties the handkerchief corner, stands, and looks back at the garden with a slight wistful smile. A breeze lifts her sleeve; petals drift past as the light softens. Medium shot, slow fade-out to suggest evening's approach, ending on quiet grace.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/daiyu/shot-12.jpg" alt="Shot 12" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 4, Shot 12</div>
+                                <div class="scene-description">Medium shot</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-controls">
+                        <div class="video-timeline">
+                            <div class="video-progress"></div>
+                        </div>
+                        <div class="video-time">0:00 / 0:00</div>
+                    </div>
+                    
+                    <div class="shot-text-panel">
+                        <div class="shot-text-header" id="shotTextHeader">
+                            <span>Shot Prompt</span>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="shot-text-content" id="shotTextContent">
+                            <p id="shotTextDisplay">Click on a shot or play the video to see the text description.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Demo 2 -->
+                <div class="demo-content" data-demo-index="1">
+                    <div class="video-description">
+                        <div style="text-align: center;">
+                            <b>Story of the Real Santa Claus</b><br>
+                        </div>
+                        heartfelt story revealing the quiet, genuine side of Santa Claus as he prepares for Christmas Eve. From his cozy workshop in the North Pole to delivering gifts under the starlit sky, we see Santa's care, warmth, and love for children around the world. The story captures the gentle magic of Christmas through intimate moments of preparation, wonder, and kindness.
+                    </div>
+                    <div class="interactive-video-container">
+                    <div class="video-player-section">
+                        <video id="storyVideoPlayer" loop autoplay muted playsinline controls preload="auto">
+                            <source src="assets/santa.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <div class="scenes-list">
+                        <!-- Scene 1, Shot 1 -->
+                        <div class="scene-item active" data-time="0" data-text="Inside a warmly lit wooden workshop at the North Pole, Santa Claus—an elderly man with a white beard, red suit, and twinkling eyes—sits at a sturdy table writing names in a large leather-bound book. Toys and tools fill the background, and snow softly falls outside the frosted window. Medium wide shot with soft, golden lighting.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-1.png" alt="Shot 1" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 1, Shot 1</div>
+                                <div class="scene-description">Medium wide shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 1, Shot 2 -->
+                        <div class="scene-item" data-time="5" data-text="Close-up of Santa gently polishing a small wooden toy train, smiling as he tests its wheels. The atmosphere is cozy and nostalgic, with the crackle of a fireplace in the background. Camera slowly pans to show finished toys stacked neatly beside him.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-2.png" alt="Shot 2" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 1, Shot 2</div>
+                                <div class="scene-description">Close-up</div>
+                            </div>
+                        </div>
+                        <!-- Scene 1, Shot 3 -->
+                        <div class="scene-item" data-time="11.5" data-text="Santa rises and stretches, glancing at a map of the world pinned on the wall, dotted with tiny glowing lights marking children's homes. The glow reflects in his eyes as he nods with quiet determination. Medium shot with a slow dolly forward, creating a sense of purpose.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-3.png" alt="Shot 3" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 1, Shot 3</div>
+                                <div class="scene-description">Medium shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 1 -->
+                        <div class="scene-item" data-time="15.5" data-text="In a snow-covered stable, Santa gently pats his reindeer lined up in harnesses, their breath visible in the cold air. The northern lights shimmer faintly above through the open door. Warm, magical atmosphere with soft blue and gold tones. Wide shot with slow camera pan.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-4.png" alt="Shot 4" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 2, Shot 4</div>
+                                <div class="scene-description">Wide shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 2 -->
+                        <div class="scene-item" data-time="20" data-text="Close-up of Santa feeding a carrot to the lead reindeer, who nudges him playfully. Santa chuckles softly, brushing snow from his sleeve. The moment feels tender and familiar. Medium close-up with shallow depth of field focusing on their faces.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-5.png" alt="Shot 5" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 2, Shot 5</div>
+                                <div class="scene-description">Medium close-up</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 3 -->
+                        <div class="scene-item" data-time="24.5" data-text="Santa climbs into his ornate sleigh filled with gifts wrapped in colorful paper and ribbons. An elf hands him a long scroll, and Santa gives a cheerful nod before grasping the reins. Wide side shot with gentle upward camera tilt as the sleigh begins to move.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-6.png" alt="Shot 6" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 2, Shot 6</div>
+                                <div class="scene-description">Wide side shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 1 -->
+                        <div class="scene-item" data-time="29.5" data-text="The sleigh glides across the night sky over snowy mountains and glowing villages below. Reindeer gallop through shimmering clouds under a full moon. The mood is awe-inspiring and serene. Wide cinematic shot with slow tracking movement.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-7.png" alt="Shot 7" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 3, Shot 7</div>
+                                <div class="scene-description">Wide cinematic shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 2 -->
+                        <div class="scene-item" data-time="34.5" data-text="Santa gently lands on a quiet rooftop dusted with snow. He steps out carrying a red sack full of gifts, moving carefully so as not to make noise. The atmosphere is still and magical, with moonlight illuminating the chimney. Medium shot from behind with a slow tilt upward.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-8.png" alt="Shot 8" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 3, Shot 8</div>
+                                <div class="scene-description">Medium shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 3 -->
+                        <div class="scene-item" data-time="39.5" data-text="Close-up of Santa placing a wrapped gift beneath a decorated Christmas tree inside a cozy living room. The room glows with soft lights and stockings hung by the fireplace. Santa smiles warmly, then glances toward the sleeping child in the background. Medium close-up with a slow, gentle zoom.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-9.png" alt="Shot 9" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 3, Shot 9</div>
+                                <div class="scene-description">Medium close-up</div>
+                            </div>
+                        </div>
+                        <!-- Scene 4, Shot 1 -->
+                        <div class="scene-item" data-time="44.5" data-text="Back in the sleigh, Santa looks up at the stars as dawn begins to break, his beard glowing softly in the early light. He exhales a visible breath, eyes full of contentment. The feeling is calm and reflective. Wide shot with smooth aerial movement.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-10.png" alt="Shot 10" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 4, Shot 10</div>
+                                <div class="scene-description">Wide shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 4, Shot 2 -->
+                        <div class="scene-item" data-time="49.5" data-text="Santa returns to his workshop, removes his red hat, and hangs it gently on a hook by the door. The toys are all gone, replaced by an empty table and a quiet sense of peace. Medium shot with warm morning light streaming in through the window.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-11.png" alt="Shot 11" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 4, Shot 11</div>
+                                <div class="scene-description">Medium shot</div>
+                            </div>
+                        </div>
+                        <!-- Scene 4, Shot 3 -->
+                        <div class="scene-item" data-time="54" data-text="Close-up of Santa sitting by the fire, sipping hot cocoa and smiling quietly to himself. The flames flicker in his glasses, and the mood is serene and fulfilled. Slow fade-out to black, ending on the soft glow of Christmas warmth.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/santa/shot-12.png" alt="Shot 12" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Scene 4, Shot 12</div>
+                                <div class="scene-description">Slow fade-out</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-controls">
+                        <div class="video-timeline">
+                            <div class="video-progress"></div>
+                        </div>
+                        <div class="video-time">0:00 / 0:00</div>
+                    </div>
+                    
+                    <div class="shot-text-panel">
+                        <div class="shot-text-header" id="shotTextHeader">
+                            <span>Shot Prompt</span>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="shot-text-content" id="shotTextContent">
+                            <p id="shotTextDisplay">Click on a shot or play the video to see the text description.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <!-- Demo 3 -->
+                <div class="demo-content" data-demo-index="2">
+                    <div class="video-description">
+                        <div style="text-align: center;">
+                            <b>Story of the Beautiful Princess and the Brave Prince</b><br>
+                        </div>
+                        A gentle love story between a prince and a princess living happily in a peaceful kingdom. One day, the princess is captured by a fierce wolf in the forest. The prince courageously embarks on a journey to rescue her. Through courage and love, he defeats the wolf and saves the princess, and the two are reunited under the golden sunset, symbolizing love's triumph over fear.
+                    </div>
+                    <div class="interactive-video-container">
+                    <div class="video-player-section">
+                        <video id="storyVideoPlayer" loop autoplay muted playsinline controls preload="auto">
+                            <source src="assets/princess.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <div class="scenes-list">
+                        <!-- Scene 1, Shot 1 -->
+                        <div class="scene-item active" data-time="0" data-text="The prince and princess stroll together in the royal garden, surrounded by blooming flowers and singing birds. They smile at each other as sunlight filters through the trees. The mood is romantic and peaceful.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-1.png" alt="Shot 1" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 1</div>
+                                <div class="scene-description">Royal Garden Stroll</div>
+                            </div>
+                        </div>
+                        <!-- Scene 1, Shot 2 -->
+                        <div class="scene-item" data-time="5" data-text="The princess plucks a white flower and places it in the prince's hand, both laughing softly. The camera captures their joyful faces in a gentle close-up. The background glows with warm sunlight. Calm and intimate atmosphere. Close-up shot.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-2.png" alt="Shot 2" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 2</div>
+                                <div class="scene-description">Flower Exchange</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 1 -->
+                        <div class="scene-item" data-time="10.5" data-text="They sit by a sparkling fountain, feeding small birds together. The scene is tranquil, with soft wind moving their hair. The princess leans slightly toward the prince, their affection evident. Medium shot with slow zoom-in.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-3.png" alt="Shot 3" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 3</div>
+                                <div class="scene-description">Fountain Scene</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 2 -->
+                        <div class="scene-item" data-time="15" data-text="Suddenly, a large gray wolf leaps out from behind a tree, growling fiercely. The princess gasps in fear and steps back. The atmosphere is dark and dangerous, with shaking leaves and rustling wind. Medium shot with slight camera shake.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-4.png" alt="Shot 4" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 4</div>
+                                <div class="scene-description">Wolf Attack</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 3 -->
+                        <div class="scene-item" data-time="20" data-text="The wolf grabs her by the arm of her gown and drags her away toward a rocky cave. The princess struggles and calls for help. The scene is fast-paced and chaotic. Wide shot with quick motion blur and high tension.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-5.png" alt="Shot 5" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 5</div>
+                                <div class="scene-description">Princess Captured</div>
+                            </div>
+                        </div>
+                        <!-- Scene 2, Shot 4 -->
+                        <div class="scene-item" data-time="25" data-text="The prince, alerted by her cries, runs through the forest with his sword drawn. His face shows fear and determination. Sunlight flickers through the trees as he sprints. Medium tracking shot following his urgent steps.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-6.png" alt="Shot 6" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 6</div>
+                                <div class="scene-description">Prince's Pursuit</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 1 -->
+                        <div class="scene-item" data-time="30" data-text="The wolf lunges toward the prince, who parries with his sword in a quick defensive move. Sparks fly as steel meets claws. The scene is brief and intense. Medium action shot with slight camera motion.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-7.png" alt="Shot 7" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 7</div>
+                                <div class="scene-description">Battle</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 2 -->
+                        <div class="scene-item" data-time="35" data-text="The prince defeats the wolf, which retreats into the darkness. He rushes to the princess, cutting the ropes binding her hands. Their faces show relief and love. Medium close-up capturing emotional reunion.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-8.png" alt="Shot 8" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 8</div>
+                                <div class="scene-description">Rescue</div>
+                            </div>
+                        </div>
+                        <!-- Scene 3, Shot 3 -->
+                        <div class="scene-item" data-time="40" data-text="The prince and princess walk hand in hand out of the forest. The golden sunset paints the sky as birds fly overhead. The mood is serene and warm, symbolizing a new beginning. Wide shot slowly zooming out to show their silhouettes.">
+                            <div class="scene-thumbnail">
+                                <img src="assets/princess/shot-9.png" alt="Shot 9" onerror="this.style.display='none'">
+                            </div>
+                            <div class="scene-info">
+                                <div class="scene-title">Shot 9</div>
+                                <div class="scene-description">Reunion</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-controls">
+                        <div class="video-timeline">
+                            <div class="video-progress"></div>
+                        </div>
+                        <div class="video-time">0:00 / 0:00</div>
+                    </div>
+                    
+                    <div class="shot-text-panel">
+                        <div class="shot-text-header" id="shotTextHeader">
+                            <span>Shot Prompt</span>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="shot-text-content" id="shotTextContent">
+                            <p id="shotTextDisplay">Click on a shot or play the video to see the text description.</p>
+                        </div>
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>    
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="video-section">
+        <div class="container">
+            <div class="video-container">
+                <div class="demo-main-title" style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.8rem; font-weight: 600; color: #ffffff; margin-bottom: 0.5rem;">Comparison</h2>
+                </div>
+                
+                <div class="comparison-tabs-wrapper">
+                    <button class="comparison-nav-btn comparison-nav-left" id="comparisonNavLeft" aria-label="Previous page">‹</button>
+                    <div class="comparison-tabs">
+                        <button class="comparison-tab active" data-page="0">Story of Robot</button>
+                        <button class="comparison-tab" data-page="1">Story of Musician</button>
+                        <button class="comparison-tab" data-page="2">Story of the Matrix</button>
+                    </div>
+                    <button class="comparison-nav-btn comparison-nav-right" id="comparisonNavRight" aria-label="Next page">›</button>
+                </div>
+                
+                <!-- Comparison Page 1 -->
+                <div class="comparison-page active" data-page-index="0">
+                    <div class="video-description" style="margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <b>Story of the Little Robot</b><br>
+                        </div>
+                        In a quiet futuristic city, a small curious robot awakens alone in a workshop. It explores the world outside for the first time, learning about nature and emotion. Along its journey, it meets a little girl who shows it kindness. Together, they discover the meaning of friendship in a world of steel and sunlight. The story is gentle, emotional, and full of wonder, emphasizing curiosity, connection, and warmth.
+                    </div>
+                    <div class="comparison-grid">
+                        <!-- Video 1 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/robot_wan.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2 + StoryDiffusion</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/robot_storydiffusion.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2 + IC-LoRA</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/robot_iclora.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 4 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">HoloCine</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/robot_holocine.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 5 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Sora2</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/robot_sora.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 6 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Ours</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/robot_ours.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comparison Page 2 -->
+                <div class="comparison-page" data-page-index="1">
+                    <div class="video-description" style="margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <b>Story of the Street Musician</b><br>
+                        </div>
+A quiet woman finds comfort and clarity in a small café during an ordinary day. From sitting alone by the window with a warm cup of coffee, to observing subtle moments of life around her, and finally lingering as the café grows calm, the story captures solitude, reflection, and the gentle warmth of everyday stillness.                    </div>
+                    <div class="comparison-grid">
+                        <!-- Video 1 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/black_wan.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2 + StoryDiffusion</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/black_storydiffusion.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2 + IC-LoRA</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/black_iclora.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 4 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">HoloCine</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/black_holocine.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 5 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Sora2</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/black_sora.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 6 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Ours</div>
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline preload="auto">
+                                    <source src="assets/comparison/black_ours.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comparison Page 3 -->
+                <div class="comparison-page" data-page-index="2">
+                    <div class="video-description" style="margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <b>Story of Neo's Awakening in the Matrix</b><br>
+                        </div>
+                        This short video tells the iconic awakening of Neo — from his ordinary life in the simulated Matrix to the moment he begins to perceive the truth. The story follows Neo’s confusion, his encounter with Morpheus, and his shocking realization that the world around him is not real. The atmosphere gradually shifts from calm and mysterious to tense and surreal, echoing Neo’s transformation from an ordinary man to the chosen one.
+                    </div>
+                    <div class="comparison-grid">
+                        <!-- Video 1 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2</div>
+                            <div class="video-wrapper">
+                                <video controls preload="auto">
+                                    <source src="assets/comparison/neo_wan.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2 + StoryDiffusion</div>
+                            <div class="video-wrapper">
+                                <video controls preload="auto">
+                                    <source src="assets/comparison/neo_storydiffusion.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Wan2.2 + IC-LoRA</div>
+                            <div class="video-wrapper">
+                                <video controls preload="auto">
+                                    <source src="assets/comparison/neo_iclora.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 4 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">HoloCine</div>
+                            <div class="video-wrapper">
+                                <video controls preload="auto">
+                                    <source src="assets/comparison/neo_holocine.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 5 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Sora2</div>
+                            <div class="video-wrapper">
+                                <video controls preload="auto">
+                                    <source src="assets/comparison/neo_sora.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video 6 -->
+                        <div class="comparison-item">
+                            <div class="comparison-method-title">Ours</div>
+                            <div class="video-wrapper">
+                                <video controls preload="auto">
+                                    <source src="assets/comparison/neo_ours.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MR2V Section -->
+    <section id="mr2v" class="video-section">
+        <div class="container">
+            <div class="video-container">
+                <div class="demo-main-title" style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.8rem; font-weight: 600; color: #ffffff; margin-bottom: 0.5rem;">MR2V: Customized Storytelling</h2>
+                </div>
+                
+                <div class="mr2v-tabs-wrapper">
+                    <button class="mr2v-nav-btn mr2v-nav-left" id="mr2vNavLeft" aria-label="Previous page">‹</button>
+                    <div class="mr2v-tabs">
+                        <button class="mr2v-tab active" data-page="0">Story of Clumsy Man</button>
+                        <button class="mr2v-tab" data-page="1">Story of Lovers</button>
+                        <button class="mr2v-tab" data-page="2">Story of Cafe</button>
+                    </div>
+                    <button class="mr2v-nav-btn mr2v-nav-right" id="mr2vNavRight" aria-label="Next page">›</button>
+                </div>
+                
+                <!-- MR2V Page 1 -->
+                <div class="mr2v-page active" data-page-index="0">
+                    <div class="video-description" style="margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <b>Story of a Clumsy Man</b><br>
+                        </div>
+                        A quiet, ordinary man tries to prepare a simple meal in his small kitchen. Awkward and uncoordinated, he approaches each step with sincere determination, only to trigger a series of escalating mishaps. From unruly toast to a stubborn jar and a wildly overflowing blender, his well-meaning efforts turn the kitchen into a mess of gentle chaos. In the end, he abandons the plan and calmly enjoys a single biscuit, surrounded by the evidence of his failed ambition. The story is a lighthearted, dialogue-free visual comedy driven by physical humor and everyday clumsiness.                    </div>
+                    <div class="mr2v-layout">
+                        <div class="mr2v-images">
+                            <div class="mr2v-image-item">
+                                <img src="assets/mr2v/man.jpg" alt="Reference Image 1" onerror="this.style.display='none'">
+                            </div>
+                            <!-- <div class="mr2v-image-item">
+                                <img src="assets/mr2v/page2-img2.jpg" alt="Reference Image 2" onerror="this.style.display='none'">
+                            </div> -->
+                            <div class="mr2v-image-label">Reference as initial memory</div>
+                        </div>
+                        <div class="mr2v-video">
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline loop preload="auto">
+                                    <source src="assets/mr2v/clumsyman.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MR2V Page 2 -->
+                <div class="mr2v-page" data-page-index="1">
+                    <div class="video-description" style="margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <b>Story of Young Lovers</b><br>
+                        </div>
+                        During a long ocean voyage aboard a large passenger ship, a quiet young man and a reserved young woman gradually form a connection through shared moments and unspoken understanding. Their bond grows through stillness, wind, and fleeting joy, before the journey takes a sudden and dangerous turn. The story focuses on restrained emotion, human closeness, and a farewell shaped by circumstance rather than words.                    </div>
+                    <div class="mr2v-layout">
+                        <div class="mr2v-images">
+                            <div class="mr2v-image-item">
+                                <img src="assets/mr2v/boy.png" alt="Reference Image 1" onerror="this.style.display='none'">
+                            </div>
+                            <div class="mr2v-image-item">
+                                <img src="assets/mr2v/girl.png" alt="Reference Image 2" onerror="this.style.display='none'">
+                            </div>
+                            <div class="mr2v-image-label">Reference as initial memory</div>
+                        </div>
+                        <div class="mr2v-video">
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline loop preload="auto">
+                                    <source src="assets/mr2v/lovers.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MR2V Page 3 -->
+                <div class="mr2v-page" data-page-index="2">
+                    <div class="video-description" style="margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <b>Story of a Woman in a Cafe</b><br>
+                        </div>
+                        A quiet woman finds comfort and clarity in a small café during an ordinary day. The woman settles into a corner of the café, reading and working. Time seems to slow, capturing patience, craftsmanship, and the small sense of calm found in everyday rituals.
+                    </div>
+                    <div class="mr2v-layout">
+                        <div class="mr2v-images">
+                            <div class="mr2v-image-item">
+                                <img src="assets/mr2v/woman.jpg" alt="Reference Image 1" onerror="this.style.display='none'">
+                            </div>
+                            <div class="mr2v-image-item">
+                                <img src="assets/mr2v/cafe.jpg" alt="Reference Image 2" onerror="this.style.display='none'">
+                            </div>
+                            <div class="mr2v-image-label">Reference as initial memory</div>
+                        </div>
+                        <div class="mr2v-video">
+                            <div class="video-wrapper">
+                                <video controls autoplay muted playsinline loop preload="auto">
+                                    <source src="assets/mr2v/cafe.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Generalization & More Results Section -->
+    <section id="generalization" class="video-section">
+        <div class="container">
+            <div class="video-container">
+                <div class="demo-main-title" style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.8rem; font-weight: 600; color: #ffffff; margin-bottom: 0.5rem;">More Results</h2>
+                </div>
+                
+                <div class="generalization-grid">
+                    <!-- Video 1 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of a Cute Cat</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/cat.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of the Little Mermaid</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/mermaid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of a Man and His Dog</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/dog.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of Jane Eyre</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/jane.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Video 5 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of Robinson Crusoe</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/robinson.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Video 6 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of a Magic Boy</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/harry.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Video 7 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of an Artist</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/artist.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Video 8 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of an AI PhD Student</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/phd.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Video 9 -->
+                    <div class="generalization-item">
+                        <div class="generalization-title">Story of the Monkey King</div>
+                        <div class="video-wrapper">
+                            <video controls autoplay muted playsinline loop preload="auto">
+                                <source src="assets/monkey.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- BibTeX Citation -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Citation</h2>
+            <div class="bibtex-container">
+                <div class="bibtex-header">
+                    <span>BibTeX</span>
+                    <button class="copy-btn" onclick="copyBibtex()">Copy</button>
+                </div>
+                <pre class="bibtex-content" id="bibtex-content">@article{zhang2025storymem,
+  title={{StoryMem}: Multi-shot Long Video Storytelling with Memory},
+  author={Zhang, Kaiwen and Jiang, Liming and Wang, Angtian and Fang, Jacob Zhiyuan and Zhi, Tiancheng and Yan, Qing and Kang, Hao and Lu, Xin and Pan, Xingang},
+  journal={arXiv preprint},
+  volume={arXiv:XXXX.XXXXX},
+  year={2025}
+}</pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>The videos shown in these demos are generated by models and are intended solely to demonstrate the capabilities of this research.<br> If you have any concerns, please contact us and we will remove the content.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
