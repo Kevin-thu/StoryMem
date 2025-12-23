@@ -31,8 +31,8 @@
   </p>
 
   <p align="center">
-    <sep>✝</sep> Project Lead
-    <sep>§</sep> Corresponding Author
+    <sep>✝</sep>Project Lead &nbsp;
+    <sep>§</sep>Corresponding Author
   </p>
 
   <p align="center">
