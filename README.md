@@ -77,12 +77,12 @@ You can easily download models using `huggingface-cli`:
 pip install "huggingface_hub[cli]"
 huggingface-cli download Wan-AI/Wan2.2-T2V-A14B --local-dir ./models/Wan2.2-T2V-A14B
 huggingface-cli download Wan-AI/Wan2.2-I2V-A14B --local-dir ./models/Wan2.2-I2V-A14B
-huggingface-cli download Kevin-thu/StoryMem-Wan2.2-M2V-A14B --local-dir ./models/StoryMem
+huggingface-cli download Kevin-thu/StoryMem --local-dir ./models/StoryMem
 ```
 
 There are two models provided:
-- `StoryMem-Wan2.2-M2V-A14B/MI2V`: Support M2V and MI2V (memory + first-frame image conditioning)
-- `StoryMem-Wan2.2-M2V-A14B/MM2V`: Support M2V and MM2V (memory + first 5 motion frames conditioning)
+- `StoryMem/Wan2.2-MI2V-A14B`: Support M2V and MI2V (memory + first-frame image conditioning)
+- `StoryMem/Wan2.2-MM2V-A14B`: Support M2V and MM2V (memory + first 5 motion frames conditioning)
 
 ### Run the Code
 You can run an example using the following command:
