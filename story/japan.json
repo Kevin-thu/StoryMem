@@ -1,0 +1,48 @@
+{
+  "story_name": "Spring After Class",
+  "story_overview": "A gentle high school romance unfolds between a shy boy and a cheerful girl in Japan. Through small, everyday encounters after class, their quiet friendship blossoms into a tender bond. The story captures soft, emotional moments of youth — a glance in the hallway, walking home under cherry blossoms, and a shared umbrella in the rain — reflecting the fleeting beauty of teenage love.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Late afternoon sunlight filters through classroom windows of a Japanese high school. A boy with neat black hair sits by the window, sketching in his notebook. The classroom is quiet, desks neatly arranged, soft warm light creating a peaceful mood. Wide shot with a calm, static frame.",
+        "A cheerful girl with a ponytail enters to retrieve her forgotten book. She notices the boy sketching and smiles curiously. The camera slowly pans from her entrance to his surprised expression, keeping a natural, quiet rhythm. The mood is shy but warm.",
+        "Close-up of the boy's hand nervously closing his notebook as the girl approaches. Their eyes meet briefly, both slightly flustered. Soft lighting and shallow focus emphasize the intimacy of the small moment. Medium close-up, smooth focus pull from his hand to their faces."
+      ],
+      "first_frame_prompt": [
+        "Boy by the classroom window sketching, warm late-afternoon light across his face; tidy desks behind; peaceful, focused mood.",
+        "Girl with a ponytail stepping in and noticing him; a gentle, curious smile; her body angled toward the boy, shy warmth between them.",
+        "Boy’s hand closing the notebook; their faces just beyond, eyes about to meet; soft warm light, quiet breath of hesitation."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Outside the school gate at sunset, the boy and girl walk side by side along a quiet street lined with blooming cherry trees. Pink petals float gently in the breeze, painting the scene in pastel tones. Wide shot with slow tracking from behind, evoking calm spring nostalgia.",
+        "The girl points at the falling petals, laughing softly, while the boy watches her with a shy smile. The camera moves slightly closer, keeping both in frame. Their steps are in rhythm, suggesting growing comfort. Medium shot, natural handheld feel.",
+        "The boy hesitates, then subtly moves his hand closer to hers, almost touching. The scene lingers softly. Low angle close-up, gentle focus shift to their hands."
+      ],
+      "first_frame_prompt": [
+        "Boy and girl walking side by side under cherry blossoms at sunset; pink petals drifting; relaxed shoulders and an easy, shared pace.",
+        "Girl pointing at the petals with a soft laugh; boy beside her with a shy smile; pastel blossoms behind, comfortable closeness.",
+        "Their hands near each other, almost touching; warm sunset glow and soft petal blur; tender hesitation in the small gap."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "The next day, gentle rain falls over the school courtyard. The boy stands at the gate without an umbrella, watching the raindrops. The background shows wet pavement and faint reflections of cherry trees. Medium shot with a calm, cinematic feel.",
+        "The girl appears, holding a light blue umbrella. She pauses, then steps closer to share it with him. The camera slowly tilts up from the umbrella handle to their faces as they stand close, rain pattering softly above. Smooth transition without a cut.",
+        "They walk together under the umbrella through the light rain, the sound of droplets blending with distant school chimes. Their shoulders brush gently, and both smile. Wide back shot, slowly pulling away as they disappear into the misty path."
+      ],
+      "first_frame_prompt": [
+        "Boy at the school gate in gentle rain, hair slightly damp; gray-blue light on his face; puddles reflecting faint cherry colors.",
+        "Girl’s hand holding a light blue umbrella entering beside him; she steps closer to share the space; raindrops beading along the fabric.",
+        "Both walking away under the umbrella, shoulders lightly touching; soft rain and mist ahead; small, content smiles in their posture."
+      ],
+      "cut": [true, false, false]
+    }
+  ]
+}

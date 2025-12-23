@@ -1,0 +1,62 @@
+{
+  "story_name": "The Real Santa Claus",
+  "story_overview": "A heartfelt story revealing the quiet, genuine side of Santa Claus as he prepares for Christmas Eve. From his cozy workshop in the North Pole to delivering gifts under the starlit sky, we see Santa’s care, warmth, and love for children around the world. The story captures the gentle magic of Christmas through intimate moments of preparation, wonder, and kindness.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Inside a warmly lit wooden workshop at the North Pole, Santa Claus—an elderly man with a white beard, red suit, and twinkling eyes—sits at a sturdy table writing names in a large leather-bound book. Toys and tools fill the background, and snow softly falls outside the frosted window. Medium wide shot with soft, golden lighting.",
+        "Close-up of Santa gently polishing a small wooden toy train, smiling as he tests its wheels. The atmosphere is cozy and nostalgic, with the crackle of a fireplace in the background. Camera slowly pans to show finished toys stacked neatly beside him.",
+        "Santa rises and stretches, glancing at a map of the world pinned on the wall, dotted with tiny glowing lights marking children’s homes. The glow reflects in his eyes as he nods with quiet determination. Medium shot with a slow dolly forward, creating a sense of purpose."
+      ],
+      "first_frame_prompt": [
+        "Warm wooden workshop, golden lamplight; Santa in red with white beard writing in a large leather book; shelves of toys and tools, frosted window with gentle snowfall.",
+        "Close on gloved hands polishing a wooden toy train; soft fireplace flicker and Santa’s fond smile; neat stack of finished toys softly blurred at the edge.",
+        "Santa standing, looking to a world map dotted with tiny glowing lights; reflections in his eyes, a small nod of resolve; cozy purpose in the room’s warmth."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "In a snow-covered stable, Santa gently pats his reindeer lined up in harnesses, their breath visible in the cold air. The northern lights shimmer faintly above through the open door. Warm, magical atmosphere with soft blue and gold tones. Wide shot with slow camera pan.",
+        "Close-up of Santa feeding a carrot to the lead reindeer, who nudges him playfully. Santa chuckles softly, brushing snow from his sleeve. The moment feels tender and familiar. Medium close-up with shallow depth of field focusing on their faces.",
+        "Santa climbs into his ornate sleigh filled with gifts wrapped in colorful paper and ribbons. An elf hands him a long scroll, and Santa gives a cheerful nod before grasping the reins. Wide side shot with gentle upward camera tilt as the sleigh begins to move."
+      ],
+      "first_frame_prompt": [
+        "Snowy stable with harnessed reindeer exhaling mist; Santa in red patting a flank; faint aurora through the open door, soft blue-gold glow.",
+        "Lead reindeer’s muzzle and Santa’s smiling face close together; a carrot in Santa’s glove, playful nudge, light snow on his sleeve.",
+        "Ornate sleigh piled with colorful gifts; an elf offering a long scroll; Santa nodding as he takes the reins, lift-off energy in the air."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "The sleigh glides across the night sky over snowy mountains and glowing villages below. Reindeer gallop through shimmering clouds under a full moon. The mood is awe-inspiring and serene. Wide cinematic shot with slow tracking movement.",
+        "Santa gently lands on a quiet rooftop dusted with snow. He steps out carrying a red sack full of gifts, moving carefully so as not to make noise. The atmosphere is still and magical, with moonlight illuminating the chimney. Medium shot from behind with a slow tilt upward.",
+        "Close-up of Santa placing a wrapped gift beneath a decorated Christmas tree inside a cozy living room. The room glows with soft lights and stockings hung by the fireplace. Santa smiles warmly, then glances toward the sleeping child in the background. Medium close-up with a slow, gentle zoom."
+      ],
+      "first_frame_prompt": [
+        "Night sky with full moon and soft cloud trails; sleigh and reindeer gliding above snowy peaks and twinkling village lights; serene wonder.",
+        "Snow-dusted rooftop from behind Santa; red sack over his shoulder, moonlit chimney ahead; careful, quiet footfalls in crisp night air.",
+        "Warm living room glow at the tree; Santa’s gloved hands setting a wrapped gift down; stockings by the fireplace, sleeping child softly blurred behind."
+      ],
+      "cut": [true, true, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "Back in the sleigh, Santa looks up at the stars as dawn begins to break, his beard glowing softly in the early light. He exhales a visible breath, eyes full of contentment. The feeling is calm and reflective. Wide shot with smooth aerial movement.",
+        "Santa returns to his workshop, removes his red hat, and hangs it gently on a hook by the door. The toys are all gone, replaced by an empty table and a quiet sense of peace. Medium shot with warm morning light streaming in through the window.",
+        "Close-up of Santa sitting by the fire, sipping hot cocoa and smiling quietly to himself. The flames flicker in his glasses, and the mood is serene and fulfilled. Slow fade-out to black, ending on the soft glow of Christmas warmth."
+      ],
+      "first_frame_prompt": [
+        "Dawn sky paling to rose and gold; Santa in the sleigh beneath fading stars, breath visible, content eyes lifted to the light.",
+        "Workshop doorway with warm morning rays; Santa hanging his red hat on a hook, neat empty table beyond; peaceful, well-earned quiet.",
+        "Firelit close-up: Santa’s hands around a cocoa mug, gentle smile, flames reflected in his glasses; serene, fulfilled warmth ready to fade out."
+      ],
+      "cut": [true, true, false]
+    }
+  ]
+}

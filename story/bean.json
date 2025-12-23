@@ -1,0 +1,46 @@
+{
+  "story_name": "Mr. Bean's Culinary Catastrophe",
+  "story_overview": "Mr. Bean attempts to prepare a simple meal but his eccentric and clumsy nature turns the kitchen into a chaotic playground. He tries to make a sandwich but every step leads to a comedic disaster, involving a toaster that launches bread into the ceiling and a stubborn jar of peanut butter. The climax is a slapstick showdown with an overflowing blender. In the end, Mr. Bean hilariously gives up, opting for a simple biscuit, while his kitchen is left in complete disarray. The story is a visual comedy filled with classic Mr. Bean gags and physical humor, with minimal dialogue.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A wide shot of a brightly lit kitchen. The camera follows Mr. Bean, a man in his late 50s with a brown tweed jacket, a white collared shirt, and a red tie. He has short brown hair and a wide, expressive face, as he enters the kitchen, rubbing his hands together with a determined, hungry look on his face. He walks towards the counter, pulling out a loaf of bread and a butter knife.",
+        "A medium shot focuses on the counter. Mr. Bean takes two slices of bread and places them in a toaster with a sense of accomplishment. He leans forward, his eyes fixed on the toaster, anticipating the perfect toast.",
+        "A close-up shot of the toaster. The timer dings loudly. The toaster violently ejects the toast slices, launching them high into the air. The camera pans up to follow the toast as it soars towards the ceiling.",
+        "A quick cut to a wide shot shows the toast slices sticking to the ceiling fan. Mr. Bean stares up in disbelief, his mouth agape. He then tries to jump and reach for the toast, but fails, adding to the comedic chaos.",
+        "A medium shot of Mr. Bean. He shrugs and gives up on the toast. He turns his attention to a jar of peanut butter, which is firmly sealed. He tries to twist the lid, grunting and straining with all his might, his face turning red with effort.",
+        "A close-up of the jar and Mr. Bean’s hands. He tries a different approach, tapping the jar with a spoon, but the lid remains unmoving. He then holds the jar upside down and shakes it vigorously, but nothing happens. The scene ends with him looking directly at the camera with a look of pure frustration."
+      ],
+      "first_frame_prompt": [
+        "Mr. Bean entering with hungry determination, rubbing hands; tweed jacket, red tie, expressive face foregrounded; bread and knife at hand.",
+        "Mr. Bean leaning toward the toaster, eyes locked on the slots; eager expression and posture emphasized.",
+        "Mr. Bean’s face anticipating the ding as he watches the toaster; hands poised nearby; chrome top catching light.",
+        "Mr. Bean below the ceiling fan, mouth agape, eyes up; arms stretching to reach the stuck toast.",
+        "Mr. Bean turning to the sealed peanut butter jar; strained grip, reddening face, shoulders tense.",
+        "Mr. Bean’s hands working the jar—spoon tap, upside-down shake—then his frustrated glare straight to camera."
+      ],
+      "cut": [true, false, false, true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "A wide shot of the kitchen. Mr. Bean, defeated but not giving up, places the jar of peanut butter on the counter and grabs a banana. He begins to peel it, his movements slow and deliberate, a look of focused concentration on his face.",
+        "A medium shot focuses on Mr. Bean. He finishes peeling the banana and drops it into a blender. He then finds a carton of milk and begins to pour it into the blender, his gaze fixated on the liquid as it fills the container.",
+        "A close-up of the blender. Mr. Bean turns the blender on, but on the highest speed. The blender motor whirs to life, and the liquid inside begins to froth and bubble uncontrollably. The camera pans up to capture the mixture overflowing from the top of the blender, spilling onto the counter and floor.",
+        "A wide shot of the chaotic scene. Mr. Bean, panicked, tries to turn the blender off, but his hands are covered in the banana-milk mixture, causing him to slip and slide around the kitchen. He flails his arms, trying to maintain his balance, creating a bigger mess.",
+        "A medium shot of Mr. Bean, completely covered in the mixture, defeated. He looks down at his messy clothes and the puddle on the floor. He sighs dramatically, a comical expression of resignation on his face. He walks past the mess he created and opens a cabinet.",
+        "A final shot shows Mr. Bean pulling out a single biscuit from a box. He sits down at the kitchen table, which is clean, and takes a bite of the biscuit. The camera slowly zooms out, revealing the kitchen in a state of utter chaos behind him, creating a funny juxtaposition between his peaceful demeanor and the mess he has made. He looks directly at the camera, takes another bite, and smiles triumphantly, as if this was his plan all along."
+      ],
+      "first_frame_prompt": [
+        "Mr. Bean setting the jar aside and picking up a banana; focused peel, intent look, careful hands.",
+        "Mr. Bean dropping the peeled banana into the blender and pouring milk; fixed gaze on rising liquid, concentrated posture.",
+        "Mr. Bean’s hand hitting the highest speed; froth surging toward the lid; his face close by, bracing for overflow.",
+        "Mr. Bean slipping and scrambling for the controls; arms flailing, banana-milk splatter on hands and clothes.",
+        "Mr. Bean soaked and resigned; dramatic sigh, eyes down at messy clothes; hand reaching to open the cabinet.",
+        "Mr. Bean seated calmly with a single biscuit; relaxed posture and satisfied smile; chaos of the kitchen left behind him."
+      ],
+      "cut": [true, false, true, true, false, true]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "story_name": "A Man and His Dog",
+  "story_overview": "A young man and his loyal dog share a peaceful daily life full of quiet joy and companionship. They begin their day with a morning walk, play together in the park, and return home to rest side by side. The story captures small, heartfelt moments that show their deep bond, from playful energy to tranquil comfort, emphasizing the beauty of simple connection between humans and animals.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Early morning sunlight streams into a cozy apartment bedroom. The man slowly wakes up in bed, stretching his arms as the dog jumps onto the bed wagging its tail excitedly. The mood is warm and peaceful, with soft golden light filling the room. Wide shot with gentle camera movement capturing the morning routine.",
+        "The man kneels to tie his sneakers at the doorway while the dog waits patiently beside him, leash in mouth. The atmosphere feels fresh and expectant, with morning light filtering through the window. Medium shot focusing on their interaction, then a soft tilt upward as they head out together."
+      ],
+      "first_frame_prompt": [
+        "Man mid-stretch on the bed and dog landing beside him, tail wagging; warm sunrise on their faces and hands; cozy room kept soft behind.",
+        "Man kneeling to tie sneakers, dog seated close with leash in mouth; shared, expectant look; gentle morning rays across their profiles."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "The man and the dog walk along a tree-lined park path under a clear blue sky. The dog trots happily beside him, occasionally glancing up. The background shows green grass and gentle sunlight filtering through leaves. Wide tracking shot from behind, giving a serene and natural vibe.",
+        "The dog runs across an open field chasing a thrown tennis ball, ears flapping and fur glowing in the sunlight. The man stands in the distance, laughing as he watches. The atmosphere is joyful and lively. Wide shot with slow panning following the dog's motion.",
+        "Close-up of the dog proudly returning with the ball in its mouth, tail wagging, as the man crouches down to praise it. Their eyes meet in a warm, playful exchange. Soft lighting enhances the tenderness. Medium close-up with shallow focus on their faces."
+      ],
+      "first_frame_prompt": [
+        "Man and dog side by side from behind; dog’s quick glance up at the man, relaxed stride; dappled light on their shoulders.",
+        "Dog sprinting after the tennis ball; ears flying, joyful expression; man visible as supportive figure in the distance.",
+        "Dog presenting the ball nose-forward, tail wagging; man crouched close, smiling; their faces aligned in warm, playful exchange."
+      ],
+      "cut": [true, true, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "At sunset, the man and the dog sit together on a park bench overlooking the glowing orange sky. The man gently pats the dog's head while both look toward the horizon. The atmosphere is calm and reflective. Wide still shot capturing the tranquil beauty.",
+        "Later that evening, they return home. The man sits on the couch reading a book while the dog curls up beside him, resting its head on his knee. The room is softly lit by a floor lamp, radiating warmth and peace. Medium shot with slow zoom-in on the quiet companionship.",
+        "Close-up of the dog falling asleep, the man smiling softly as he strokes its fur. The lights dim slightly, and the scene fades out gently. Close-up shot with smooth fade to black, ending on a feeling of deep affection and calm."
+      ],
+      "first_frame_prompt": [
+        "Man and dog seated on the bench in profile; his hand resting on the dog’s head, both gazing toward the sunset; gentle orange rim light on their silhouettes.",
+        "Man reading with a soft smile as the dog nestles and rests its head on his knee; warm lamp glow on faces and hands.",
+        "Close on the dog’s sleepy face and the man’s hand stroking its fur; calm breath, soft dim light, peaceful closeness."
+      ],
+      "cut": [true, false, false]
+    }
+  ]
+}

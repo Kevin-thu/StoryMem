@@ -1,0 +1,32 @@
+{
+  "story_name": "Simple PhD life",
+  "story_overview": "A compact, uplifting arc of an AI PhD student: focused coding leads to a breakthrough, mentorship sharpens the work, and intense paper writing culminates in an acceptance. The journey continues through travel and a confident conference presentation, ending with a quiet seaside reflection — a portrait of curiosity, resilience, and earned joy.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A young AI PhD student with casual hoodie and glasses is focused on coding at his desktop computer. His hands type quickly on the keyboard, eyes locked on the glowing screen. The background shows a tidy dorm room with books, coffee mug, and sticky notes scattered. The mood is quiet and studious with warm desk lighting. Medium shot with slight camera zoom-in on the screen and student’s concentrated face.",
+        "The student suddenly sees experiment results pop up on the monitor. His eyes widen, eyebrows raised, and his mouth opens in shock and joy. The room is softly lit, computer light reflecting on his face. The atmosphere is electrified with excitement. Close-up shot on his expressive face with a quick cut to the result window.",
+        "The student, still buzzing with excitement, stands before his professor, an older man in a suit with glasses. He gestures animatedly toward his laptop screen, seeking feedback. They are in a university office with bookshelves and academic posters in the background. The tone is curious and hopeful. Medium two-shot with camera slowly panning between student and professor.",
+        "The student, now wearing headphones, hunches over his computer while drafting a research paper. His eyes dart across multiple monitors, fingers tapping rapidly. The workspace is cluttered with notes, reference books, and empty coffee cups. The atmosphere is intense but determined, lit by the bluish glow of screens. Wide shot of the desk with occasional cut-ins to the paper draft text.",
+        "In a quiet faculty lounge, the student sits next to his professor, nervously checking his laptop for the paper decision. He fidgets with his hands, glances at his professor, who waits calmly with folded arms. The room has modern furniture and soft daylight streaming in. The mood is tense with anticipation. Medium shot with the camera lingering on their faces, alternating focus.",
+        "The student suddenly jumps from his seat, showing the acceptance notification. Both he and the professor burst into smiles, raising their hands for a celebratory high five. Papers scatter slightly from the movement, and the office feels bright and lively. The mood is euphoric and triumphant. Slow-motion capture of the high five followed by a quick zoom-out to capture both of their joy.",
+        "The student wheels a suitcase through the busy airport terminal. He looks determined yet excited, glancing at the departure board. The background is filled with travelers, signs, and bright airport lighting. The scene feels energetic and full of motion. Wide tracking shot following the student from behind.",
+        "On stage at a large conference hall, the student stands confidently in formal attire, presenting with a clicker in hand. Thousands of audience members sit in dim light while a giant screen displays slides behind him. His gestures are clear and expressive, voice projected with confidence. The mood is professional and inspiring. Wide shot of the hall with a slow pan toward the student at center stage.",
+        "After the conference, the student relaxes at a seaside resort, wearing sunglasses. He strolls barefoot on the sand, smiling while looking at the horizon. The beach is dotted with palm trees, colorful umbrellas, and soft ocean waves. The atmosphere is peaceful and joyful, golden sunset painting the sky. Wide aerial shot slowly descending toward the student by the waterline."
+      ],
+      "first_frame_prompt": [
+        "Hoodie-wearing grad student typing with intent; glasses catching screen glow; warm desk lamp on a tidy, book-lined dorm; quiet, focused face.",
+        "Screen light flaring on his face as results appear; eyes wide, brows up, mouth parting in delighted shock; electric excitement in his expression.",
+        "Student animatedly gesturing to a laptop while facing an older professor in glasses; hopeful eyes and eager posture, professor attentive.",
+        "Student in headphones hunched toward multiple monitors; rapid fingers, determined eyes; notes and empty cups around a late-night grind.",
+        "Student nervously checking a laptop beside a calm professor; fidgeting hands, tight smile; soft daylight on anxious features.",
+        "Hands raised mid–high five, both grinning; laptop showing acceptance on the desk; papers lifting, pure shared triumph on their faces.",
+        "Student rolling a suitcase through the terminal; determined, excited glance toward departures; bright travel bustle around him.",
+        "Student center stage in formal wear with clicker; confident stance and open gestures; calm focus in his eyes against a giant slide glow.",
+        "Student in sunglasses at the shoreline, barefoot; relaxed smile toward the horizon; sunset warmth soft on his face as waves lap nearby."
+      ],
+      "cut": [true, false, true, true, true, false, true, true, true]
+    }
+  ]
+}

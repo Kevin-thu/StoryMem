@@ -1,0 +1,54 @@
+{
+  "story_name": "The Lost City of Eternis",
+  "story_overview": "An intrepid explorer ventures deep into the jungle and stumbles upon the long-lost city of Eternis. As he journeys through dense forests, ancient ruins, and mysterious chambers, he uncovers relics of a forgotten civilization. The story captures the awe and quiet wonder of discovery, balancing tension and serenity as the explorer realizes he has uncovered something truly eternal.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A rugged explorer in khaki outfit and wide-brimmed hat hikes through a misty jungle at dawn, vines hanging from towering trees. He carries a leather backpack and a map in hand. The atmosphere is humid and mysterious, with golden light breaking through the canopy. Wide shot with slow forward tracking to follow his steps.",
+        "The explorer kneels beside an overgrown stone marker partly buried in moss, brushing off dirt to reveal faint carvings. His face lights up with curiosity. Medium close-up with slow zoom-in on the carvings. Soft jungle ambience in the background.",
+        "He looks up and notices a faint stone pathway leading deeper into the jungle. The camera follows from behind as he cautiously steps onto it, pushing aside branches. The mood is suspenseful yet hopeful. Smooth handheld-style tracking shot continuing from the previous clip.",
+        "The path opens up to a misty valley, revealing distant ancient stone towers barely visible through the fog. The explorer stops in awe. Wide establishing shot, slow zoom-out to emphasize the vastness of the discovery."
+      ],
+      "first_frame_prompt": [
+        "Explorer foregrounded in khaki with wide-brim hat, map in hand and leather backpack; dawn mist beading on his sleeves; golden canopy light shaping his determined profile.",
+        "Explorer kneeling at the mossed stone marker; close on his intent face and the hand brushing dirt; eyes bright with curiosity, faint carvings emerging beside his fingers.",
+        "Explorer glancing up and stepping onto the faint stone path; shoulders angled forward, one hand parting branches, cautious focus in his eyes.",
+        "Explorer paused at the valley’s edge; face lifted in awe toward distant towers; breath visible in cool fog, posture still and reverent."
+      ],
+      "cut": [true, true, true, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "The explorer approaches massive vine-covered gates at the entrance of the lost city. He runs his hand across the ancient symbols carved into the stone. The atmosphere feels sacred and timeless. Medium shot from the side, soft sunlight filtering through vines.",
+        "He pushes open the heavy stone door, and light spills into the dark corridor beyond. Dust particles float in the air. The camera follows from behind, with a slow forward dolly through the doorway to blend smoothly with the next scene.",
+        "Inside, the corridor walls are covered in glowing murals and ancient inscriptions. The explorer walks slowly, holding up a torch. The lighting is dim and flickering, creating a sense of awe and mystery. Tracking shot with gentle camera movement.",
+        "He reaches a grand chamber filled with crumbling statues and a central altar. He looks around in silent wonder, eyes wide. Wide panoramic shot circling around the room to reveal its scale and beauty."
+      ],
+      "first_frame_prompt": [
+        "Explorer beside the vine-draped gates; fingers tracing carved symbols; calm, respectful expression under soft leaf-filtered light.",
+        "Explorer bracing a shoulder and both hands to push the heavy door; face lit by the first spill of light, anticipation in his eyes.",
+        "Explorer advancing with torch raised; attentive gaze reading murals, flicker reflecting on his features; measured, careful steps.",
+        "Explorer entering the grand chamber; head turning, eyes wide; body small against towering statues, quiet awe evident."
+      ],
+      "cut": [true, false, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "The explorer carefully lifts a small golden relic from the altar, its surface engraved with intricate patterns. His hands tremble slightly with excitement. Close-up of his hands and the artifact, torchlight reflecting on the metal surface.",
+        "As he examines it, a faint mechanical sound echoes. Ancient mechanisms shift and a hidden ceiling opening reveals beams of sunlight pouring into the room. Smooth transition from previous frame, slow upward camera tilt to follow the light.",
+        "He stands bathed in golden light, gazing upward with awe as dust sparkles in the air. The scene feels transcendent and timeless. Wide low-angle shot capturing both the explorer and the illuminated chamber.",
+        "The camera slowly pulls back through the doorway as the explorer stands motionless in the glow, symbolizing his monumental discovery. The mood is peaceful, reverent, and full of wonder. Slow zoom-out ending in a fade to white."
+      ],
+      "first_frame_prompt": [
+        "Explorer’s trembling hands lifting the engraved golden relic; focused face close by, breath steadying; torch highlights dancing across the patterns.",
+        "Explorer’s eyes rising as mechanisms stir; head tilted up, features catching the first sunbeams; attentive concentration before the light blooms.",
+        "Explorer framed low, arms relaxed at his sides, face bathed in golden shafts; upward gaze full of wonder, dust glitter around him.",
+        "Explorer held in radiant doorway glow; serene posture, hands loosely at his sides; calm acceptance as the scene prepares to fade."
+      ],
+      "cut": [true, false, true, false]
+    }
+  ]
+}

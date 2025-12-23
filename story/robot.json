@@ -1,0 +1,50 @@
+{
+  "story_name": "The Little Robot’s First Friend",
+  "story_overview": "In a quiet futuristic city, a small curious robot awakens alone in a workshop. It explores the world outside for the first time, learning about nature and emotion. Along its journey, it meets a little girl who shows it kindness. Together, they discover the meaning of friendship in a world of steel and sunlight. The story is gentle, emotional, and full of wonder, emphasizing curiosity, connection, and warmth.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Inside a softly lit robotics workshop filled with metal parts and glowing monitors, a small robot with round eyes slowly powers on for the first time. Its eyes flicker blue as it looks around curiously. Warm, calm lighting and gentle camera zoom-in convey a sense of awakening and innocence.",
+        "The robot tilts its head, studying the scattered tools and half-finished gadgets on the workbench. It touches a tiny gear, watching it spin slowly. A quiet hum fills the air. Medium shot focusing on its small, delicate hand and wide-eyed curiosity.",
+        "The robot spots an open door with daylight streaming through. It hesitates, then rolls toward it on small wheels. The sunlight casts a golden glow on its silver frame. Wide shot with soft backlighting as it approaches the threshold, ready to explore the world."
+      ],
+      "first_frame_prompt": [
+        "Small round-eyed robot awakening in a warm, softly lit workshop; blue eye flicker reflecting monitors; curious gaze taking in scattered parts.",
+        "Robot’s delicate hand touching a tiny spinning gear; gentle head tilt and wide blue eyes focused with wonder; soft mechanical hum around.",
+        "Robot on small wheels facing an open doorway washed in golden daylight; silver frame rim-lit, hesitant then hopeful posture toward the world."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "The robot exits into a peaceful city park filled with trees, birds, and warm morning light. It looks around, blinking at the colors of flowers and grass. Wide shot showing the contrast between its metallic body and the organic surroundings.",
+        "A butterfly lands briefly on the robot’s hand. The robot freezes, then gently raises its arm to observe it closely, a faint reflection of the butterfly glowing in its eyes. Soft breeze, close-up shot capturing delicate movement and wonder.",
+        "The butterfly flies away, and the robot tries to follow, rolling slowly through the grass. The motion is clumsy but endearing. Medium tracking shot, playful and warm atmosphere, with sunlight flickering through the trees."
+      ],
+      "first_frame_prompt": [
+        "In a sunlit park, the small metallic robot blinks at bright flower colors; gentle morning warmth on its faceplate contrasts with greenery.",
+        "Butterfly resting on the robot’s hand; its wings mirrored faintly in the robot’s blue eyes; the robot holds perfectly still in wonder.",
+        "Robot rolling through grass after the butterfly; endearingly clumsy posture, arms slightly out; dappled sunlight dancing over its shell."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "The robot stops near a bench where a little girl is drawing on a sketchpad. She looks up, surprised but curious. The robot stands still, tilting its head slightly. Medium shot showing both in frame, quiet and cautious mood.",
+        "The girl smiles and offers the robot a small paper flower she just folded. The robot slowly reaches out to take it, holding it carefully as if it’s something precious. Close-up of their hands meeting, warm sunlight highlighting the moment.",
+        "They sit together on the bench, the robot holding the paper flower while the girl continues drawing, occasionally showing her sketches to the robot. Wide shot capturing their quiet companionship under the golden afternoon light.",
+        "As evening falls, the girl waves goodbye and walks home, leaving the robot sitting alone under a glowing streetlamp. The robot looks at the paper flower, then up at the stars."
+      ],
+      "first_frame_prompt": [
+        "Little girl with sketchpad looking up, curiosity soft on her face; robot nearby with a slight head tilt, unsure but gentle; warm afternoon hush.",
+        "Hands meeting: the girl offering a paper flower, the robot’s careful grasp; warm sun edging their fingers, tender first connection.",
+        "Girl and robot side by side on the bench; paper flower cradled in the robot’s hands; easy, quiet smiles in golden light.",
+        "Robot alone beneath a streetlamp, paper flower held close; soft halo on its round eyes as the first stars appear; bittersweet calm."
+      ],
+      "cut": [true, false, true, false]
+    }
+  ]
+}

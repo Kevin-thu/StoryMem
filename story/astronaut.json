@@ -1,0 +1,52 @@
+{
+  "story_name": "The Last Walk",
+  "story_overview": "A lone astronaut embarks on a tranquil yet emotional mission to the Moon. From the quiet interior of his spacecraft to the breathtaking surface of the lunar landscape, he experiences solitude, wonder, and a deep connection with the cosmos. The story captures humanity’s longing for exploration and peace in the silence of space, ending with a quiet moment under the stars before returning home.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Inside a softly lit spacecraft cabin, an astronaut in a pristine white suit floats gently in zero gravity. The Earth and Moon are both visible through a wide window, casting a cool blue light over metallic surfaces. The mood is calm and expectant. Wide shot with slow drifting camera motion.",
+        "The astronaut checks a digital mission panel glowing softly with blue light, then gazes through the window toward the Moon, his face calm but determined behind the visor. The scene carries quiet anticipation. Medium shot, connected smoothly from previous frame.",
+        "He tightens his gloves and gives a small nod, readying for landing. The cabin lights flicker as the spacecraft nears the lunar surface, creating a subtle sense of awe. Close-up on his hands and focused eyes with gentle vibration in the background."
+      ],
+      "first_frame_prompt": [
+        "Astronaut floating near the spacecraft window, Earth and Moon glowing softly outside; white suit illuminated by gentle blue reflections.",
+        "Focused astronaut looking through the window toward the Moon; calm, steady breathing; illuminated visor and mission panel glow.",
+        "Close-up of gloved hands adjusting equipment; visor reflecting lunar surface light; quiet preparation atmosphere."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "The spacecraft touches down on the Moon, stirring up gentle silver dust under weak gravity. The astronaut steps out slowly, his boots leaving crisp footprints in the powdery surface. Wide shot capturing the vast, desolate landscape under soft sunlight.",
+        "The astronaut walks forward, each step slow and deliberate, looking up at the black sky filled with distant stars. His shadow stretches long across the lunar plain. Wide shot continuing smoothly from previous frame, calm and majestic.",
+        "The astronaut pauses to place a small flag beside a rock formation, the fabric barely fluttering in the vacuum. He looks around, taking in the stillness. Medium shot, subtle camera pan showing the wide, endless horizon.",
+        "The astronaut kneels to pick up a small Moon rock, watching the dust float gently as it falls. He holds it close, the reflection of Earth visible in his visor. Close-up shot emphasizing emotion and stillness."
+      ],
+      "first_frame_prompt": [
+        "Lunar lander resting on pale gray surface; astronaut descending slowly down the ladder; powdery dust faintly disturbed.",
+        "Astronaut walking carefully across the Moon; low sunlight casting long shadows; starry void overhead.",
+        "Small flag beside rocks; astronaut’s upright posture and reflective gaze; muted silver tones around.",
+        "Astronaut kneeling, holding a small Moon rock; visor reflecting Earth’s blue glow; serene expression."
+      ],
+      "cut": [true, false, true, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "As the Sun sets low over the lunar ridge, the astronaut sits quietly on a small rock, gazing at Earth hanging above the horizon. The world glows faintly blue in the black sky. Wide shot filled with solitude and beauty.",
+        "The astronaut activates a small holographic recorder, sending a soft message home. His voice is calm and heartfelt, echoing slightly in the helmet. Medium shot, continuing smoothly from the previous frame.",
+        "The astronaut stands, taking one last look at Earth before turning back toward the spacecraft. His footsteps mark a winding path on the gray surface. Wide shot with slow pan following his movement.",
+        "Back inside the cabin, the astronaut removes his helmet and watches the Moon fade away through the window as the spacecraft ascends. Soft light glows on his face, peaceful and reflective. Medium shot ending with a slow fade to black."
+      ],
+      "first_frame_prompt": [
+        "Astronaut sitting on a small lunar rock, Earth visible above the horizon; orange lunar dusk light creating long shadows.",
+        "Close view of astronaut recording message, hand near a floating holographic recorder; gentle reflections on visor.",
+        "Astronaut walking back toward spacecraft; faint footprints trailing behind; pale surface glowing under soft light.",
+        "Helmet off inside cabin, soft light from window on face; Earth slowly shrinking in distance beyond the glass."
+      ],
+      "cut": [true, false, true, false]
+    }
+  ]
+}

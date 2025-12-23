@@ -1,0 +1,58 @@
+{
+  "story_name": "The Early Life of Forrest Gump",
+  "story_overview": "The story follows young Forrest Gump growing up in rural Alabama, capturing his innocent charm, physical struggles, and his mother’s unconditional love. From his early days wearing leg braces to his first moments of friendship and discovering his running talent, the story gently portrays the warmth, resilience, and simplicity that shape Forrest’s childhood world.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "A quiet morning in a small Alabama farmhouse during the 1950s. Young Forrest Gump, a skinny boy with short brown hair and leg braces, sits on the porch beside his loving mother. She gently ties his shoes and smiles encouragingly. The soft morning light and distant chirping of birds create a tender, nostalgic mood. Wide shot with gentle camera tilt down from the trees to the porch.",
+        "Forrest slowly walks down the dirt path in front of the house, his leg braces clicking as he moves. His mother watches proudly from the porch, waving. Medium tracking shot following Forrest from behind for a natural continuation."
+      ],
+      "first_frame_prompt": [
+        "Forrest seated on the porch with leg braces visible; his mother leaning in to tie his shoes, an encouraging smile on her face; warm sunrise on both faces, quiet and tender.",
+        "Forrest stepping onto the dirt path with braces clearly shown; his mother waving from the porch behind; gentle morning light on Forrest’s back and shoulders."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Forrest steps into the school bus, clutching his books nervously. Other children laugh and talk nearby, but no one offers him a seat. The atmosphere feels slightly lonely yet innocent. Medium shot with soft focus on Forrest’s face as he looks around shyly.",
+        "A red-haired girl named Jenny turns around and smiles warmly at Forrest, patting the seat beside her. Forrest hesitates, then sits next to her, his expression brightening. The bus jolts forward as sunlight streams through the windows. Medium shot from inside the bus, smooth transition from the previous frame.",
+        "Jenny, the red-haired girl, and Forrest, the boy share a laugh as the bus drives through green countryside. The camera gently pans to show their reflection in the window — two children beginning a lifelong friendship. Soft, warm tone with gentle handheld camera motion for intimacy."
+      ],
+      "first_frame_prompt": [
+        "Forrest in the bus aisle clutching books tightly, shy eyes searching for a seat; warm window light on his face; other kids softened in the background.",
+        "Jenny turns with a warm smile and pats the seat; Forrest hesitates, then brightens; sunlight streaks across their faces, inviting and gentle.",
+        "Forrest and Jenny laughing close by the window; both faces visible alongside their reflection; soft, warm mood centered on the two kids."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "On a dusty rural road, Forrest is cornered by several boys throwing stones at him. He flinches, frightened, as one stone hits near his foot. The tension is mild but emotional. Medium shot capturing their aggressive motion from a slight distance.",
+        "Forrest begins to run awkwardly, his braces clanging. The camera follows from behind as his movements grow faster and steadier. The moment feels tense but inspiring. Continuous motion from the last frame for a smooth transition.",
+        "The braces suddenly break apart as Forrest runs freely down the long dirt road, leaving the bullies far behind. His expression changes from fear to pure joy. The sunlight glows around him, emphasizing freedom and triumph. Wide tracking shot with slow zoom-out to show the open landscape."
+      ],
+      "first_frame_prompt": [
+        "Forrest flinching with wide eyes, leg braces in frame; silhouettes of boys behind him implied; warm dusty light on his face.",
+        "Forrest starting to run, posture tense but gaining confidence; braces emphasized, dust lifting around his legs; determination building on his face.",
+        "Forrest mid-stride with a liberated smile; braces breaking apart as he surges forward; bullies distant behind; golden sunlight outlining his features."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "Later that evening, Forrest sits on the porch again beside his mother, now without the braces. She holds his hand proudly as fireflies flicker around them. The mood is calm and full of gentle warmth. Medium wide shot with stable framing and soft lighting.",
+        "Forrest gazes up at the starry night sky, his face glowing softly in the moonlight. His mother leans her head against his shoulder, smiling quietly. The scene ends with a feeling of peace and hope. Close-up shot with slow fade to black."
+      ],
+      "first_frame_prompt": [
+        "On the porch at dusk, Forrest without braces, fingers intertwined with his mother’s; calm smiles on both faces; fireflies’ glow touching their cheeks.",
+        "Forrest looking up at the stars with soft moonlight on his face; his mother resting her head on his shoulder with a quiet smile; serene, hopeful stillness."
+      ],
+      "cut": [true, true]
+    }
+  ]
+}

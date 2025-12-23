@@ -1,0 +1,60 @@
+{
+  "story_name": "Sam Altman and the Great GPU Hunt (Revised for Generation Models)",
+  "story_overview": "Sam Altman, frustrated by a GPU shortage, decides to find GPUs at a local supermarket. With simple readable signs and expressive actions, this short comedy tells a clear, visual story without complex motion or text.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Inside a modern office, Sam Altman looks at a glowing monitor showing big bold letters 'GPU ALERT'. He leans forward with a thoughtful, slightly stressed face. The room has soft blue light and computer screens around.",
+        "Sam picks up his jacket and keys with a determined expression. On the desk, a sticky note reads 'Buy GPUs'. Sunlight shines in through the window as he heads toward the door.",
+        "Outside the OpenAI office, Sam sits in a small electric car. He smiles slightly and drives off through a calm city street."
+      ],
+      "first_frame_prompt": [
+        "Soft-blue modern office; man facing a monitor with large 'GPU ALERT' text; focused, slightly stressed eyes; clean tech surroundings.",
+        "Close on desk: hand grabbing jacket and keys; sticky note clearly reading 'Buy GPUs'; warm sunlight across the tabletop, determined posture.",
+        "Curbside exterior: compact electric car with the man in the driver’s seat; faint smile, calm city street beyond, gentle departure mood."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Wide shot of a bright supermarket entrance with a big sign above reading 'SUPER MARKET'. Sam walks in pushing a shopping cart, looking focused.",
+        "In the electronics aisle, Sam picks up a shiny toaster and tilts his head curiously. A small paper tag beside it reads 'GPU 5090' in big letters. He looks intrigued.",
+        "A friendly store employee gestures toward another aisle labeled 'VEGETABLES'. Sam nods with hope and pushes his cart in that direction."
+      ],
+      "first_frame_prompt": [
+        "Bright entrance with large 'SUPER MARKET' sign; automatic doors; man entering while pushing a cart; welcoming retail light.",
+        "Electronics shelf with a shiny toaster in hand; the man’s curious head tilt toward a tag labeled 'GPU 5090'; amused intrigue on his face.",
+        "Employee at an aisle intersection pointing toward an overhead 'VEGETABLES' sign; the man nods and turns his cart that way, playful optimism."
+      ],
+      "cut": [true, true, false]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "Sam stands in front of a shelf of green cans labeled 'Green Pea Units (GPU)' in bold letters. He holds one can close, puzzled but amused.",
+        "Sam pushes his cart filled with toasters, lamps, and green cans. He looks proud, walking through the aisle as customers glance curiously."
+      ],
+      "first_frame_prompt": [
+        "Front-on shelves stacked with green cans labeled 'Green Pea Units (GPU)'; man lifting one close to inspect; eyebrows raised, half-smile.",
+        "Aisle view: cart piled with two shiny toasters, a couple of lamps, and several green cans; the man’s proud stride while shoppers glance over."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 4,
+      "video_prompts": [
+        "At the checkout counter, Sam places his strange items — toasters, green cans, and chips — on the belt. A visible sign on a chip bag reads 'GPU FLAVOR'.",
+        "The cashier looks confused while scanning items. Sam nods proudly, standing tall beside the pile. People in the background look amused.",
+        "Outside the supermarket at sunset, Sam pushes a cart full of glowing appliances and 'GPU FLAVOR' chips. He looks satisfied, gazing upward with a calm smile."
+      ],
+      "first_frame_prompt": [
+        "Checkout conveyor with toasters, green cans, and a chip bag clearly labeled 'GPU FLAVOR'; bright store lights; playful reveal.",
+        "Cashier pausing with a puzzled look; the man beside the counter nodding proudly; a couple of amused shoppers in soft background blur.",
+        "Sunset parking lot: the man pushing a cart of gently glowing appliances and visible 'GPU FLAVOR' chips; satisfied calm smile under a warm sky."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "story_name": "Counsel in the Throne Room",
+  "story_overview": "In a grand high-fantasy throne room, a young queen wrestles with heavy decisions while her aging advisor offers steady guidance. Through intimate, sequential shots, the queen’s burden transforms into clarity and resolve, culminating in a confident rise to leadership.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Medium shot: a young queen in ornate regal attire and an elaborate crown sits on a carved throne beside a long table; a detailed campaign map with tokens and banners is spread out. Sunbeams filter through stained-glass windows, casting jewel-toned light across marble floors; the mood is tense yet dignified. Slow, subtle dolly-in.",
+        "Close-up of the queen’s face: brow knitted, eyes shadowed with responsibility; a faint flicker of uncertainty as she studies the map. Shallow depth of field isolates her expression; static framing for intensity.",
+        "Medium shot: her loyal, aging advisor with a long grey beard steps to her side and gently places a reassuring hand on her shoulder. Warm torchlight highlights fine embroidery and the advisor’s weathered features; steady, composed camera.",
+        "Medium close-up: the queen looks up at him, her expression softening; a breath releases, shoulders ease slightly. Gentle push-in to capture the shifting emotion; quiet, respectful atmosphere.",
+        "Close-up of the advisor’s wise, kind eyes as he speaks softly; his gaze conveys patience and conviction. Minimal motion, soft rack focus from his eyes to lips, then back.",
+        "Medium shot: the queen listens intently, hands clasped, then nods with renewed resolve; her posture straightens. The room’s golden light grows warmer, suggesting clarity; slow, measured camera move.",
+        "Medium-wide shot: she rises from the throne, standing tall and commanding; the advisor steps back, proud. The map remains in frame, now a symbol of action; locked-off camera to emphasize decisive transformation."
+      ],
+      "first_frame_prompt": [
+        "Young queen in ornate robes and crown seated beside a long table; hands near a token-strewn campaign map; stained-glass sunbeams coloring her and the marble floor; composed yet tense poise.",
+        "Close on the queen’s face above the map edge: knitted brow, shadowed eyes, a flicker of uncertainty; shallow focus isolating her expression.",
+        "Advisor with a long grey beard at her side, one hand resting gently on her shoulder; warm torchlight revealing his weathered calm and her slight lean toward comfort.",
+        "Queen looking up to the advisor, shoulders easing; softened eyes and a released breath; quiet respect in warm, gentle light.",
+        "Advisor’s eyes, kind and steady as he speaks; close view that lingers on patient conviction; soft falloff around his features.",
+        "Queen listening with hands clasped, then giving a small, resolute nod; posture straightening as the room’s light feels warmer on her face.",
+        "Queen rising tall from the throne, confident and composed; advisor a respectful step back, proud; the campaign map remains before her as a sign of action."
+      ],
+      "cut": [true, false, true, false, true, false, true]
+    }
+  ]
+}

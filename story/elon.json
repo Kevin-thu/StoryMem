@@ -1,0 +1,48 @@
+{
+  "story_name": "A Day in the Life of Elon Musk",
+  "story_overview": "The story follows Elon Musk through a humorous yet inspiring day. From his early morning coffee and rocket doodles, to an intense Tesla factory visit, and finally a quiet sunset moment reflecting on Mars dreams. The short narrative blends his busy entrepreneurial life with moments of calm reflection, showing both the human and visionary sides of Musk. The style is realistic yet slightly comedic, with smooth scene transitions and consistent character design.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Early morning in a minimalist modern house. Elon Musk, wearing a simple black t-shirt, sits at a kitchen island sipping coffee while glancing at his tablet. Sunlight filters through large windows, giving a warm glow. Medium shot, calm atmosphere with a light camera pan across the kitchen.",
+        "Elon sketches a quick rocket design on a notepad beside his coffee mug, looking focused and amused at his own idea. The background shows a few Tesla and SpaceX models on a shelf. Close-up of his hand drawing and his thoughtful expression. Soft lighting, relaxed mood.",
+        "He checks his watch, realizes he's late, and quickly grabs his jacket. The camera follows him in a brisk handheld tracking shot as he heads toward the door. The movement adds a light comedic touch, emphasizing his busy schedule."
+      ],
+      "first_frame_prompt": [
+        "Medium view of a minimalist kitchen at sunrise; man in black t-shirt at island with coffee and tablet; warm window light, soft reflections, calm mood.",
+        "Tight close-up of hand sketching a rocket on a notepad beside a mug; shelf blur with car and rocket models; relaxed soft lighting, thoughtful expression partial.",
+        "Dynamic first frame of hallway exit: man mid-reach for jacket, wristwatch visible; slight handheld feel, warm interior light, light comedic urgency."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "At the Tesla factory floor, Elon walks alongside engineers wearing safety vests. He listens attentively, occasionally nodding and smiling. The background shows robotic arms assembling cars with sparks and motion. Wide shot with dynamic industrial energy, slightly warm lighting.",
+        "He stops to examine a car prototype, gently tapping the hood while discussing something with a young engineer. The mood is curious and focused. Medium two-shot with camera slowly circling them for depth.",
+        "Elon gestures energetically while explaining an idea, the team around him taking notes and nodding. The atmosphere is inspiring yet down-to-earth. Close-up of his expressive hands and confident face, camera slightly zooming in."
+      ],
+      "first_frame_prompt": [
+        "Wide factory floor view: engineers in safety vests walking amid robotic arms and sparks; warm industrial lighting, energetic yet orderly.",
+        "Medium two-shot by a sleek prototype car; one person tapping hood, another listening; clean workshop background, focused expressions.",
+        "Close-up on animated hands mid-gesture with notepads and attentive faces nearby; confident expression, soft zoom feel, warm metal tones."
+      ],
+      "cut": [true, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "Late evening on a quiet rooftop terrace overlooking the city. Elon sits alone on a bench, holding a cup of tea. The skyline glows with twilight lights, and his face reflects calm satisfaction. Wide shot, peaceful and cinematic tone.",
+        "He gazes up at the night sky where Mars glimmers faintly. A gentle breeze ruffles his hair. The camera tilts upward following his gaze, revealing the stars in a soft gradient of deep blue and red. Mood is serene and thoughtful.",
+        "The final shot shows Elon smiling subtly, whispering 'One day.' The camera slowly pulls back, leaving him framed against the glowing city and starry sky. Fade out to black, ending on an inspirational note."
+      ],
+      "first_frame_prompt": [
+        "Wide rooftop terrace at blue hour; solitary figure on bench with tea, city skyline glowing softly; peaceful cinematic composition.",
+        "Upward-tilt starting frame: profile glance toward starry sky with a faint reddish point; gentle breeze implied, deep blue-to-red gradient.",
+        "Medium-wide pullback start: subtle smile, city lights and star field behind; tranquil inspirational tone, soft vignetting."
+      ],
+      "cut": [true, false, true]
+    }
+  ]
+}

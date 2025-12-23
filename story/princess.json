@@ -1,0 +1,48 @@
+{
+  "story_name": "The Brave Prince and the Wolf",
+  "story_overview": "A gentle love story between a prince and a princess living happily in a peaceful kingdom. One day, the princess is captured by a fierce wolf in the forest. The prince courageously embarks on a journey to rescue her. Through courage and love, he defeats the wolf and saves the princess, and the two are reunited under the golden sunset, symbolizing love's triumph over fear.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "The prince and princess stroll together in the royal garden, surrounded by blooming flowers and singing birds. They smile at each other as sunlight filters through the trees. The mood is romantic and peaceful.",
+        "The princess plucks a white flower and places it in the prince’s hand, both laughing softly. The camera captures their joyful faces in a gentle close-up. The background glows with warm sunlight. Calm and intimate atmosphere. Close-up shot."
+      ],
+      "first_frame_prompt": [
+        "Prince and princess walking among blooms, sunlight soft on their faces; tender smiles exchanged, birdsong hinted, peaceful romance in their expressions.",
+        "Princess placing a white flower into the prince’s hand; both smiling warmly; sunlit bokeh around their faces, intimate calm."
+      ],
+      "cut": [true, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "They sit by a sparkling fountain, feeding small birds together. The scene is tranquil, with soft wind moving their hair. The princess leans slightly toward the prince, their affection evident. Medium shot with slow zoom-in.",
+        "Suddenly, a large gray wolf leaps out from behind a tree, growling fiercely. The princess gasps in fear and steps back. The atmosphere is dark and dangerous, with shaking leaves and rustling wind. Medium shot with slight camera shake.",
+        "The wolf grabs her by the arm of her gown and drags her away toward a rocky cave. The princess struggles and calls for help. The scene is fast-paced and chaotic. Wide shot with quick motion blur and high tension.",
+        "The prince, alerted by her cries, runs through the forest with his sword drawn. His face shows fear and determination. Sunlight flickers through the trees as he sprints. Medium tracking shot following his urgent steps."
+      ],
+      "first_frame_prompt": [
+        "By the fountain, the couple feeding birds; the princess leaning toward the prince with a gentle smile; tranquil warmth on their faces.",
+        "Wolf bursting from behind a tree as the princess recoils; fear in her eyes, the wolf’s snarl aimed toward them; darker tones gathering.",
+        "Wolf pulling the princess toward a rocky cave; her sleeve taut in the wolf’s grip, panic and struggle on her face; high-tension urgency.",
+        "Prince sprinting with sword drawn; strained, determined expression; sun-dappled light across his face as he rushes toward the cries."
+      ],
+      "cut": [true, false, false, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "The wolf lunges toward the prince, who parries with his sword in a quick defensive move. Sparks fly as steel meets claws. The scene is brief and intense. Medium action shot with slight camera motion.",
+        "The prince defeats the wolf, which retreats into the darkness. He rushes to the princess, cutting the ropes binding her hands. Their faces show relief and love. Medium close-up capturing emotional reunion.",
+        "The prince and princess walk hand in hand out of the forest. The golden sunset paints the sky as birds fly overhead. The mood is serene and warm, symbolizing a new beginning. Wide shot slowly zooming out to show their silhouettes."
+      ],
+      "first_frame_prompt": [
+        "Wolf mid-lunge toward the prince; his sword raised in a firm parry; sparks at the clash, focused resolve on his face.",
+        "Prince cutting the ropes at the princess’s wrists; relief softening their faces as they meet each other’s eyes; warm, tender reunion.",
+        "Silhouetted couple hand in hand beneath a golden sunset; serene smiles and gentle posture; birds crossing the glowing sky."
+      ],
+      "cut": [true, true, true]
+    }
+  ]
+}

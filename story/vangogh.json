@@ -1,0 +1,50 @@
+{
+  "story_name": "The Light of Van Gogh",
+  "story_overview": "A poetic visual story about Vincent van Gogh’s artistic journey — from his humble beginnings in a small room, to his moments of inspiration in the fields of Arles, and finally his peaceful reflection under the starry night. The short film captures his passion, struggle, and the beauty he saw in the world through light and color. The tone is emotional yet calm, celebrating creativity and inner light.",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Inside a dimly lit attic room in Paris, Van Gogh, a man with unkempt reddish-blond hair and a thin beard, sits by a wooden table surrounded by paint tubes and brushes. He stares at a blank canvas, deep in thought, sunlight filtering softly through a small window. Warm yet melancholic atmosphere. Medium shot, gentle camera pan around the room.",
+        "Close-up of Van Gogh dipping his brush into yellow paint and beginning to sketch bold strokes on the canvas. His eyes focus intensely, hands moving with deliberate care. The background fades softly, drawing attention to his concentration. Close-up shot with shallow focus.",
+        "Van Gogh pauses, steps back, and observes his painting with mixed feelings — both hope and doubt. The candle flickers beside him, casting moving shadows on the walls. Medium shot, slow zoom-out as he exhales deeply in reflection."
+      ],
+      "first_frame_prompt": [
+        "Van Gogh in a dim attic studio at a wooden table, blank canvas before him; scattered paint tubes and brushes; soft sun through a small window, warm-melancholic hush.",
+        "Brush tip sinking into vivid yellow; first bold strokes appearing; his eyes narrowed with focus, background melting softly away.",
+        "He steps back beside a flickering candle; hope and doubt share his face as shadows ripple on the walls; calm breath, reflective distance."
+      ],
+      "cut": [true, false, false]
+    },
+    {
+      "scene_num": 2,
+      "video_prompts": [
+        "Under the bright Provençal sun, Van Gogh walks through golden wheat fields with his easel and canvas on his back. He wears a straw hat and simple light-blue shirt, the wind gently moving the crops. Wide shot with slow tracking from behind, evoking calm and openness.",
+        "He sets up his easel beside a blooming field of sunflowers. With passionate strokes, he begins painting, the sunlight glinting off his palette. Medium shot showing both the real flowers and his painted ones in the same frame.",
+        "Close-up of the paintbrush gliding across the canvas — thick layers of vivid yellow and orange forming the petals. A breeze moves the real sunflowers in sync with his brushstrokes. Macro-style close-up with gentle handheld movement.",
+        "Van Gogh smiles faintly, eyes glistening as he steps back to admire his work. The camera circles slowly, revealing the vast blue sky and the glowing field around him. Wide panoramic shot with a warm, uplifting feeling."
+      ],
+      "first_frame_prompt": [
+        "Rear view under bright Provençal light: Van Gogh in straw hat crossing golden wheat with easel on his back; wind ripples the field, open calm.",
+        "At the easel beside tall sunflowers: real blooms and the canvas in one view; his hand painting with bright, eager strokes; sunlight catching the palette.",
+        "Macro brush pass laying thick yellow-orange petals; tiny ridges of paint shine; beyond the edge, real sunflowers sway in the same rhythm.",
+        "He steps back with a faint, glistening-eyed smile; the blue vault of sky and glowing field widen around him; gentle warmth lifting the scene."
+      ],
+      "cut": [true, false, true, true]
+    },
+    {
+      "scene_num": 3,
+      "video_prompts": [
+        "At dusk, Van Gogh stands by his window overlooking the quiet village of Saint-Rémy. The sky turns indigo with swirling clouds. He gazes upward with awe, sketchbook in hand. Medium shot with soft evening light and gentle wind blowing the curtains.",
+        "Transition to night — Van Gogh paints under the flickering lantern light, creating flowing strokes that form stars and swirling skies on the canvas. His eyes reflect both exhaustion and inspiration. Medium close-up with slow dolly-in.",
+        "A serene wide shot of the final painting illuminated by soft moonlight. Van Gogh sits quietly beside it, looking peaceful, a faint smile on his face as the stars outside shimmer. Wide still shot fading slowly to black."
+      ],
+      "first_frame_prompt": [
+        "At a dusk-lit window over Saint-Rémy, sketchbook in hand; he looks up into forming indigo swirls; curtains breathe in a gentle breeze.",
+        "Night interior by lantern glow: flowing strokes become stars and whorls; his eyes carry tiredness and fire together; quiet, steady focus.",
+        "Moonlit calm: the completed starry canvas beside him as he sits in peace; a faint smile, outside stars softly shimmering toward a slow fade."
+      ],
+      "cut": [true, true, false]
+    }
+  ]
+}
