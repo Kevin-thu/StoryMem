@@ -54,6 +54,8 @@
 ## 🚀 Getting Started
 ### Installation
 ```bash
+git clone --single-branch --branch main git@github.com:Kevin-thu/StoryMem.git
+cd StoryMem
 conda create -n storymem python=3.11
 conda activate storymem
 pip install -r requirements.txt
