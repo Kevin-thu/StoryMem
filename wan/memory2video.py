@@ -33,6 +33,7 @@ from .utils.fm_solvers import (
 from .utils.fm_solvers_unipc import FlowUniPCMultistepScheduler
 from decord import VideoReader, cpu
 import torchvision.transforms.functional as TF
+from safetensors.torch import load_file
 
 import logging
 logger = logging.getLogger()
@@ -196,20 +197,31 @@ class WanM2V:
 
     def _load_lora(self, model, lora_config):
         """
-        Load lora weights.
+        Load LoRA weights.
         """
         lora_cfg = copy.deepcopy(lora_config)
         lora_cfg.pop("enabled")
         lora_weight = lora_cfg.pop("weight", None)
+
         lora_cfg = LoraConfig(**lora_cfg)
         model = get_peft_model(model, lora_cfg)
 
         if lora_weight is not None:
-            logger.info(f"Loading lora from {lora_weight}")
-            state_dict = torch.load(lora_weight, map_location="cpu", mmap=True)
+            logger.info(f"Loading LoRA from {lora_weight}")
+
+            ext = os.path.splitext(lora_weight)[1]
+
+            if ext == ".safetensors":
+                state_dict = load_file(lora_weight, device="cpu")
+            else:
+                state_dict = torch.load(
+                    lora_weight,
+                    map_location="cpu",
+                    mmap=True
+                )
+
             msg = set_peft_model_state_dict(model, state_dict)
-            # logger.info(f"Loading lora from {lora_weight} with missing keys: {msg.missing_keys}")
-        
+            # logger.info(f"Missing keys: {msg.missing_keys}")
         return model
 
     def _prepare_model_for_timestep(self, t, boundary, offload_model):
