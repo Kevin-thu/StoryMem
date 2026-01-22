@@ -189,8 +189,8 @@ def main(args):
     ###### Generate next-shot videos ######
     m2v_config = WAN_CONFIGS["m2v-A14B"]
     if args.lora_weight_path is not None:
-        m2v_config.low_noise_lora.weight = os.path.join(args.lora_weight_path, "backbone_low_noise.pth")
-        m2v_config.high_noise_lora.weight = os.path.join(args.lora_weight_path, "backbone_high_noise.pth")
+        m2v_config.low_noise_lora.weight = os.path.join(args.lora_weight_path, "backbone_low_noise.safetensors")
+        m2v_config.high_noise_lora.weight = os.path.join(args.lora_weight_path, "backbone_high_noise.safetensors")
     if args.lora_rank is not None:
         m2v_config.low_noise_lora.r = m2v_config.low_noise_lora.lora_alpha = args.lora_rank
         m2v_config.high_noise_lora.r = m2v_config.high_noise_lora.lora_alpha = args.lora_rank

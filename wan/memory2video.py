@@ -20,9 +20,9 @@ from peft import LoraConfig, PeftModel, get_peft_model, set_peft_model_state_dic
 from tqdm import tqdm
 
 from .distributed.fsdp import shard_model
-from .distributed.sequence_parallel import sp_attn_forward, sp_dit_forward
+from .distributed.sequence_parallel_memory import sp_attn_forward, sp_dit_forward
 from .distributed.util import get_world_size
-from .modules.model import WanModel
+from .modules.model_memory import WanModel_Memory
 from .modules.t5 import T5EncoderModel
 from .modules.vae2_1 import Wan2_1_VAE
 from .utils.fm_solvers import (
@@ -109,8 +109,8 @@ class WanM2V:
             vae_pth=os.path.join(checkpoint_dir, config.vae_checkpoint),
             device=self.device)
 
-        logging.info(f"Creating WanModel from {checkpoint_dir}")
-        self.low_noise_model = WanModel.from_pretrained(
+        logging.info(f"Creating WanModel_Memory from {checkpoint_dir}")
+        self.low_noise_model = WanModel_Memory.from_pretrained(
             checkpoint_dir, subfolder=config.low_noise_checkpoint)
         if finetune_checkpoint_dir is not None:
             finetune_low_noise_model_path = os.path.join(finetune_checkpoint_dir, "backbone_low_noise.pth")
@@ -127,7 +127,7 @@ class WanM2V:
             shard_fn=shard_fn,
             convert_model_dtype=convert_model_dtype)
 
-        self.high_noise_model = WanModel.from_pretrained(
+        self.high_noise_model = WanModel_Memory.from_pretrained(
             checkpoint_dir, subfolder=config.high_noise_checkpoint)
         if finetune_checkpoint_dir is not None:
             finetune_high_noise_model_path = os.path.join(finetune_high_noise_model_path, "backbone_high_noise.pth")
@@ -365,7 +365,7 @@ class WanM2V:
             first_frame = TF.to_tensor(first_frame).sub_(0.5).div_(0.5).to(self.device)
             h, w = first_frame.shape[1:]
 
-        if motion_frames_file is not None:
+        elif motion_frames_file is not None:
             vr = VideoReader(motion_frames_file, ctx=cpu())
             assert len(vr) == 5
             frames = []
@@ -406,7 +406,7 @@ class WanM2V:
         msk[:, memory_size:] = 0
         if first_frame_file is not None:
             msk[:, memory_size] = 1
-        if motion_frames_file is not None:
+        elif motion_frames_file is not None:
             msk[:, memory_size:memory_size + 5] = 1
         msk = torch.concat([
             torch.repeat_interleave(msk[:, :memory_size + 1], repeats=self.vae_stride[0], dim=1), msk[:, memory_size + 1:]
@@ -440,7 +440,7 @@ class WanM2V:
                     torch.zeros(3, F-1, h, w)
                 ], dim=1).unsqueeze(0).to(self.device)
             ).float().squeeze(0)
-        if motion_frames_file is not None:
+        elif motion_frames_file is not None:
             u = self.vae.encode(
                 torch.concat([
                     motion_frames.transpose(0, 1).to(self.device),
@@ -498,12 +498,14 @@ class WanM2V:
             arg_c = {
                 'context': [context[0]],
                 'seq_len': max_seq_len,
+                'memory_size': memory_size,
                 'y': [y],
             }
 
             arg_null = {
                 'context': context_null,
                 'seq_len': max_seq_len,
+                'memory_size': memory_size,
                 'y': [y],
             }
 

@@ -38,9 +38,7 @@ m2v_A14B.low_noise_lora = {
     'bias': 'none',
     'target_modules': ['self_attn.q', 'self_attn.k', 'self_attn.v', 'self_attn.o','cross_attn.q', 'cross_attn.k', 'cross_attn.v', 'cross_attn.o', 'ffn.0', 'ffn.2'],
     'use_rslora': True,
-    'enabled': True,
-    # 'weight': 'hdfs://harunasg/home/byte_pokemon_sg/user/kaiwen.zhang/wan2.2_m2v_movie_a14b_finetune_480p_m6_lora128_attnffn_fthevc25k_mi2v0.5/wan2.2_m2v_lora_icvg_14b_480p_lr1e-5/states/0000023000/models/backbone_low_noise.pth'
-    'weight': 'hdfs://harunasg/home/byte_pokemon_sg/user/kaiwen.zhang/wan2.2_m2v_hevc_a14b_finetune_480p_mmax8_lora128_attnffn_selfaug_step25inter5/wan2.2_m2v_lora_hevc_14b_480p_lr1e-5/states/0000020000/models/backbone_low_noise.pth'
+    'enabled': True
 }
 m2v_A14B.high_noise_lora = {
     'r': 128,
@@ -49,9 +47,7 @@ m2v_A14B.high_noise_lora = {
     'bias': 'none',
     'target_modules': ['self_attn.q', 'self_attn.k', 'self_attn.v', 'self_attn.o','cross_attn.q', 'cross_attn.k', 'cross_attn.v', 'cross_attn.o', 'ffn.0', 'ffn.2'],
     'use_rslora': True,
-    'enabled': True,
-    # 'weight': 'hdfs://harunasg/home/byte_pokemon_sg/user/kaiwen.zhang/wan2.2_m2v_movie_a14b_finetune_480p_m6_lora128_attnffn_fthevc25k_mi2v0.5/wan2.2_m2v_lora_icvg_14b_480p_lr1e-5/states/0000023000/models/backbone_high_noise.pth'
-    'weight': 'hdfs://harunasg/home/byte_pokemon_sg/user/kaiwen.zhang/wan2.2_m2v_hevc_a14b_finetune_480p_mmax8_lora128_attnffn_selfaug_step25inter5/wan2.2_m2v_lora_hevc_14b_480p_lr1e-5/states/0000020000/models/backbone_high_noise.pth'
+    'enabled': True
 }
 
 # inference
