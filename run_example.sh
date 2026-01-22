@@ -2,49 +2,10 @@ export PYTHONNOUSERSITE=1
 export NGPUS=8
 DISTRIBUTED_ARGS="--nproc_per_node=$NGPUS --master_port=9999"
 
-OUTPUT_PATH=results_mm2v/daiyu
+OUTPUT_PATH=results/daiyu
 mkdir -p $OUTPUT_PATH
 torchrun $DISTRIBUTED_ARGS  pipeline.py \
 --story_script_path ./story/daiyu.json \
---t2v_model_path ./models/Wan2.2-T2V-A14B \
---i2v_model_path ./models/Wan2.2-I2V-A14B \
---lora_weight_path ./models/StoryMem/Wan2.2-MM2V-A14B \
---size "832*480" --max_memory_size 10 \
---output_dir $OUTPUT_PATH \
---dit_fsdp --t5_fsdp --ulysses_size $NGPUS --offload_model --lora_rank 128 --mm2v --t2v_first_shot
-torchrun $DISTRIBUTED_ARGS  pipeline.py \
---story_script_path ./story/daiyu.json \
---t2v_model_path ./models/Wan2.2-T2V-A14B \
---i2v_model_path ./models/Wan2.2-I2V-A14B \
---lora_weight_path ./models/StoryMem/Wan2.2-MM2V-A14B \
---size "832*480" --max_memory_size 10 \
---output_dir $OUTPUT_PATH \
---dit_fsdp --t5_fsdp --ulysses_size $NGPUS --offload_model --lora_rank 128 --mm2v
-
-
-# OUTPUT_PATH=results_mm2v/black
-# mkdir -p $OUTPUT_PATH
-# torchrun $DISTRIBUTED_ARGS  pipeline.py \
-# --story_script_path ./story/black.json \
-# --t2v_model_path ./models/Wan2.2-T2V-A14B \
-# --i2v_model_path ./models/Wan2.2-I2V-A14B \
-# --lora_weight_path ./models/StoryMem/Wan2.2-MM2V-A14B \
-# --size "832*480" --max_memory_size 10 \
-# --output_dir $OUTPUT_PATH \
-# --dit_fsdp --t5_fsdp --ulysses_size $NGPUS --offload_model --lora_rank 128 --mm2v --t2v_first_shot
-# torchrun $DISTRIBUTED_ARGS  pipeline.py \
-# --story_script_path ./story/black.json \
-# --t2v_model_path ./models/Wan2.2-T2V-A14B \
-# --i2v_model_path ./models/Wan2.2-I2V-A14B \
-# --lora_weight_path ./models/StoryMem/Wan2.2-MM2V-A14B \
-# --size "832*480" --max_memory_size 10 \
-# --output_dir $OUTPUT_PATH \
-# --dit_fsdp --t5_fsdp --ulysses_size $NGPUS --offload_model --lora_rank 128 --mm2v
-
-OUTPUT_PATH=results_mm2v/black
-mkdir -p $OUTPUT_PATH
-torchrun $DISTRIBUTED_ARGS  pipeline.py \
---story_script_path ./story/black.json \
 --t2v_model_path ./models/Wan2.2-T2V-A14B \
 --i2v_model_path ./models/Wan2.2-I2V-A14B \
 --lora_weight_path ./models/StoryMem/Wan2.2-MI2V-A14B \
@@ -52,7 +13,7 @@ torchrun $DISTRIBUTED_ARGS  pipeline.py \
 --output_dir $OUTPUT_PATH \
 --dit_fsdp --t5_fsdp --ulysses_size $NGPUS --offload_model --lora_rank 128 --mi2v --t2v_first_shot
 torchrun $DISTRIBUTED_ARGS  pipeline.py \
---story_script_path ./story/black.json \
+--story_script_path ./story/daiyu.json \
 --t2v_model_path ./models/Wan2.2-T2V-A14B \
 --i2v_model_path ./models/Wan2.2-I2V-A14B \
 --lora_weight_path ./models/StoryMem/Wan2.2-MI2V-A14B \
