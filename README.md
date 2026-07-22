@@ -1,6 +1,5 @@
 <p align="center">
   <h2 align="center"><i>StoryMem</i>: Multi-shot Long Video Storytelling with Memory</h1>
-  <!-- <h3 align="center">ICCV 2025</h3> -->
   <p align="center">
                 <span class="author-block">
                 <a href="https://kevin-thu.github.io/homepage/" target="_blank">Kaiwen Zhang</a>,
